@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <background id="bg"/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import background from '@/components/background.vue'
+
+export default {
+  components:{ background }  
+}
+</script>
+
 
 <style>
 #app {
@@ -27,5 +37,13 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#bg{
+  position: absolute;
+  top:0px;
+  left:0px;
+  max-width: 100vw;
+  z-index: -1;
 }
 </style>
