@@ -48,11 +48,23 @@ export default {
   }
 
   #bienvenida{
-    margin-top: 12vh;
+    position:relative;
+    top:12vh;
   }
   
   #indice{
-    margin-top: 97vh;  
+    position:relative;
+    top:80vh;
+  }
+
+  #linksDeEjemplos{
+    position:relative;
+    top:-10vh;
+  }
+
+  #about{
+    position:relative;
+    top:40vh;
   }
 
 </style>

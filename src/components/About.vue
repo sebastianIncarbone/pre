@@ -2,7 +2,7 @@
 <div class="about">
 
     <div class="circulo c1">
-        <div class="img" v-on="on">
+        <div class="img">
             <span class="base"></span>
             <img src="../assets/logo.png" height="100px" width="100px"/>
         </div>
@@ -14,7 +14,7 @@
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
-                <v-icon style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;">fa-envelope</v-icon>
+                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
@@ -25,7 +25,7 @@
     </div>
     
     <div class="circulo c2">
-        <div class="img" v-on="on">
+        <div class="img">
             <span class="base"></span>
             <img src="../assets/logo.png" height="100px" width="100px"/>
         </div>
@@ -37,7 +37,7 @@
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
-                <v-icon style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;">fa-envelope</v-icon>
+                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
@@ -48,7 +48,7 @@
     </div>
     
     <div class="circulo c3">
-        <div class="img" v-on="on">
+        <div class="img">
             <span class="base"></span>
             <img src="../assets/logo.png" height="100px" width="100px"/>
         </div>
@@ -60,7 +60,7 @@
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
-                <v-icon style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;">fa-envelope</v-icon>
+                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
@@ -71,7 +71,7 @@
     </div>
     
     <div class="circulo c4">
-        <div class="img" v-on="on">
+        <div class="img">
             <span class="base"></span>
             <img src="../assets/logo.png" height="100px" width="100px"/>
         </div>
@@ -83,7 +83,7 @@
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
-                <v-icon style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;">fa-envelope</v-icon>
+                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
@@ -104,6 +104,9 @@
 
 <style>
 .about{    
+    position:relative;
+    top:5vh;
+    left:-29vw;
     max-height:100vh;
     display:flex;
     flex-direction:row;
@@ -111,7 +114,7 @@
 }
 
 .c1, .c2, .c3, .c4{
-    /*padding:50px;*/
+    padding:50px;
     width:30vw;
     height:30vh;
 } 
@@ -127,7 +130,7 @@
 }
 
 .circulo .img{
-    background: radial-gradient(rgba(183,222,237,1) 0%,rgba(113,206,239,1) 60%,rgba(33,180,226,1) 61%,rgba(183,222,237,1) 100%);
+    background: radial-gradient(rgba(152,28,90,.98) 0%,rgba(169,42,81,.98) 58%,rgba(219,42,71,1) 59%,rgba(173,28,90,1) 100%);
     height: 152px;
     width: 152px;
     border-radius: 50%;
@@ -147,7 +150,7 @@
     height: 152px;
     width: 152px;
     border-radius: 50%;
-    background: #1d74bbb9;
+    background: rgba(2,72,115,.5);
     margin: auto;
     position: absolute;
     display: flex;

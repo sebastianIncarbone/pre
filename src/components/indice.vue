@@ -902,7 +902,7 @@
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="849" height="200" rx="100"/>
-                                <circle v-bind:class="getClaseR(onOffIntroduccion)" cx="104" cy="101" r="90"/>
+                                <circle v-bind:class="getClaseR(this.onOffIntroduccion)" cx="104" cy="101" r="90"/>
                             </g>
                         </g>
                     </g>
@@ -916,11 +916,15 @@
                         <stop offset="0.72" stop-color="#d52849"/>
                         <stop offset="1" stop-color="#db2a47"/>
                     </linearGradient>
+                    <linearGradient id="Nueva_muestra_de_degradado_5" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#3EC408"/><stop offset="0.36" stop-color="#3EC408"/>
+                        <stop offset="0.72" stop-color="#419B00"/><stop offset="1" stop-color="#419B00"/>
+                    </linearGradient>
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="897" height="200" rx="100"/>
-                                <circle v-bind:class="getClaseL(onOffModelo)" cx="792" cy="100" r="90"/>
+                                <circle v-bind:class="getClaseL(this.onOffModelo)" cx="792" cy="100" r="90"/>
                             </g>
                         </g>
                     </g>
@@ -932,11 +936,15 @@
                         <stop offset="0" stop-color="#ad1c5a"/><stop offset="0.36" stop-color="#c42351"/>
                         <stop offset="0.72" stop-color="#d52849"/><stop offset="1" stop-color="#db2a47"/>
                     </linearGradient>
+                    <linearGradient id="Nueva_muestra_de_degradado_5" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#3EC408"/><stop offset="0.36" stop-color="#3EC408"/>
+                        <stop offset="0.72" stop-color="#419B00"/><stop offset="1" stop-color="#419B00"/>
+                    </linearGradient>
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="849" height="200" rx="100"/>
-                                <circle v-bind:class="getClaseR(onOffParadigma)" cx="104" cy="101" r="90"/>
+                                <circle v-bind:class="getClaseR(this.onOffParadigma)" cx="104" cy="101" r="90"/>
                             </g>
                         </g>
                     </g>
@@ -944,17 +952,19 @@
             </div>
             <div class="ejemplo" @click="onOffEjemplo=!onOffEjemplo">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 897 200">
-                    <linearGradient id="Nueva_muestra_de_degradado_4" x1="702" y1="100" x2="882" y2="100" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#ad1c5a"/>
-                        <stop offset="0.36" stop-color="#c42351"/>
-                        <stop offset="0.72" stop-color="#d52849"/>
-                        <stop offset="1" stop-color="#db2a47"/>
+                     <linearGradient id="Nueva_muestra_de_degradado_4" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ad1c5a"/><stop offset="0.36" stop-color="#c42351"/>
+                        <stop offset="0.72" stop-color="#d52849"/><stop offset="1" stop-color="#db2a47"/>
+                    </linearGradient>
+                    <linearGradient id="Nueva_muestra_de_degradado_5" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#3EC408"/><stop offset="0.36" stop-color="#3EC408"/>
+                        <stop offset="0.72" stop-color="#419B00"/><stop offset="1" stop-color="#419B00"/>
                     </linearGradient>
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="897" height="200" rx="100"/>
-                                <circle v-bind:class="getClaseL(onOffEjemplo)" cx="792" cy="100" r="90"/>
+                                <circle v-bind:class="getClaseL(this.onOffEjemplo)" cx="792" cy="100" r="90"/>
                             </g>
                         </g>
                     </g>
