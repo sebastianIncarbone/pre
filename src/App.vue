@@ -20,7 +20,7 @@
 <script>
 import background from '@/components/Background.vue'
 import home from '@/components/Home.vue'
-import indice from '@/components/indice.vue'
+import indice from '@/components/Indice.vue'
 import linksDeEjemplos from '@/components/LinksDeEjemplos.vue'
 import about from '@/components/About.vue'
 

@@ -1,5 +1,5 @@
 <template>
-<div class="abaut">
+<div class="about">
 
     <div class="circulo c1">
         <div class="img" v-on="on">
@@ -103,6 +103,19 @@
 </script>
 
 <style>
+.about{    
+    max-height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.c1, .c2, .c3, .c4{
+    /*padding:50px;*/
+    width:30vw;
+    height:30vh;
+} 
+
 .circulo{
     margin: auto;
     margin-top: 40px;
@@ -120,19 +133,6 @@
     border-radius: 50%;
     opacity: 1;
     z-index: 3;
-}
-
-.circulo .img::before{
-    background: radial-gradient(rgba(183,222,237,1) 0%,rgb(174, 216, 231) 60%,rgba(33,180,226,1) 61%,rgba(183,222,237,1) 100%);
-    clip-path: polygon(0% 100%, 99% 99%, 100% 57%, 95% 55%, 91% 53%, 86% 53%, 81% 54%, 77% 56%, 74% 58%, 70% 60%, 65% 62%, 61% 60%, 56% 57%, 52% 56%, 49% 55%, 45% 53%, 41% 52%, 36% 52%, 31% 51%, 27% 51%, 24% 50%, 20% 49%, 16% 51%, 12% 52%, 9% 53%, 6% 56%, 3% 58%, 1% 60%, 0% 63%);
-    position: absolute;
-    padding-top: 152px;
-    padding-right: 152px;
-    content:" ";
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    opacity: 1;
 }
 
 .circulo .img img{
