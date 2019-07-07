@@ -187,7 +187,7 @@ export default {
     }
 
     #backgruond-blue{
-        width: 70%;
+        width: 63%;
         z-index: -1;
     }
     

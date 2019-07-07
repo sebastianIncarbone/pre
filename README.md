@@ -3,31 +3,30 @@
 ## Temario
 
 - Introduccion
-    - Historia breve
-    - Redes neuronales concepto
-    - Que es machine learning?
-    - Como se relaciona con la Inteligencia Artificial
-    - Diferencias con Deep Learning
+    - [Lau] -> Historia breve
+    - [Seba] -> Redes neuronales concepto
+    - [Ami] -> Que es machine learning?
+    - [Nahu] -> Como se relaciona con la Inteligencia Artificial
+    - [Lau] -> Diferencias con Deep Learning
 - Modelo
-    - Que es un modelo?
-    - Que datos ingresan en un modelo?
-    - Los parametros del modelo
-    - El error
-    - Que es regresion lineal?
-        - Metodo de cuadrados ordinarios
-        - Desenso del gradiente
-        - Regrecion Lineal Simple
-        - Regrecion Lineal Multiple
-        - Comparar con tensor flow
+    - [Lau] -> Que es un modelo?
+    - [Seba] -> Que datos ingresan en un modelo?
+    - [Ami] -> Los parametros del modelo
+    - [Nahu] -> El error
+    - [Lau] -> Que es regresion lineal?
+    - [Seba] -> Metodo de cuadrados ordinarios
+    - [Nahu] -> Regrecion Lineal Simple
+    - [Lau] -> Regrecion Lineal Multiple
+    - [Seba] -> Comparar con tensor flow
 - Paradigmas
-    - Que es un Paradigma?
-    - Cuales hay en este campo de ML?
-    - Supervisado
-    - No Supervisado
-    - Reforzado
+    - [Ami] -> Que es un Paradigma?
+    - [Nahu] -> Cuales hay en este campo de ML?
+    - [Lau] -> Supervisado
+    - [Seba] -> No Supervisado
+    - [Nahu] -> Reforzado
 - Ejemplo
-    - tensor flow
-    - muestra de la demo	
+    - [Lau] -> tensor flow
+    - [Seba] -> muestra de la demo	
 
 #Modelo
 
