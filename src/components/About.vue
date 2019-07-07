@@ -105,9 +105,7 @@
 <style>
 .about{    
     position:relative;
-    top:5vh;
     left:-29vw;
-    max-height:100vh;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
@@ -120,9 +118,7 @@
 } 
 
 .circulo{
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;

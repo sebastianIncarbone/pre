@@ -64,7 +64,7 @@ export default {
 
   #about{
     position:relative;
-    top:40vh;
+    top:100vh;
   }
 
 </style>
