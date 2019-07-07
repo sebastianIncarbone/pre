@@ -1247,7 +1247,7 @@ export default {
 
     #contenedorDeLinks .ejemplo{
         position:relative;
-        top: -110vh;
+        top: -114.8vh;
         left: 40vw;
         width: 40vw;
     }

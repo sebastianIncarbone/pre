@@ -4,6 +4,8 @@
     <background id="bg"/>
     <home id="bienvenida"/>
     <indice id="indice"/>
+    <linksDeEjemplos id="linksDeEjemplos"/>
+    <about id="about"/>
     <!--
         <div id="nav">
           <router-link to="/">Home</router-link> |
@@ -19,12 +21,16 @@
 import background from '@/components/Background.vue'
 import home from '@/components/Home.vue'
 import indice from '@/components/indice.vue'
+import linksDeEjemplos from '@/components/LinksDeEjemplos.vue'
+import about from '@/components/About.vue'
 
 export default {
   components:{ 
     background,
     home,
-    indice
+    indice,
+    linksDeEjemplos,
+    about
   }  
 }
 </script>
@@ -36,7 +42,7 @@ export default {
     position: absolute;
     top:0px;
     left:0px;
-    max-width: 98.5vw;
+    max-width: 98.7vw;
     overflow: hidden;
     z-index: -1;
   }
