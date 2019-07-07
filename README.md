@@ -28,9 +28,9 @@
     - [Lau] -> tensor flow
     - [Seba] -> muestra de la demo	
 
-#Modelo
+# Modelo
 
-##Que es un modelo?
+## Que es un modelo?
 
     Un modelo busca el equilibrio entre aproximarce en reprecentar correctamente la realidad
     y ser simple para poder utilizarlo. Imaginemos a un ave, Pepita... podemos aproximarnos en un
@@ -44,7 +44,7 @@
     matematicamente que la mayoria de aves pueden volar.
     La provabilidad es la herramienta perfecta para resumir nuestra insertidumbre sobre un tema. 
 
-##Los datos
+## Los datos
 
     Toma de contacto con la realidad, las mediciones que hacemos de ella. A partir de esto vamos a extraer
     toda la informacion para construir nuestro modelo.
@@ -53,7 +53,7 @@
     por si misma. Todos esos datos hacen que una personaje este reprecentada como un punto en un mapa 
     multidimencional
 
-##Los Parametros
+## Los Parametros
 
     Son los datos que podemos modificar, estos valores son los parametros del modelo y son los unicos que nos 
     aportan la flexibilidad para poder ajustarnos a los datos.
@@ -67,9 +67,10 @@
     Esta señal de error es muy importante por que es a partir de la cual se ajustara el modelo. En un proceso que es
     denominado obtimizacion normalmente conocida como <strong>Entrenamiento</strong>.  
 
-#Paradigmas
+# Paradigmas
 
-##Aprendizaje no supervisado
+## Aprendizaje no supervisado
+
     Puede producir conocimiento unicamente de los datos que se proporcionan como entrada.
     sin necesidad de expresarle al sistema que resultado queremos obtener.
     Obtiene la posibilidad de saber si una cosa es igual a otra cosa. que pasa con respecto al anterior?
@@ -77,7 +78,8 @@
     ya que el propio algorimo es capaz de desambiguar las similitudes.
     Espacios latentes
 
-##Aprendizaje supervisado
+## Aprendizaje supervisado
+
     Se basa en responder la conexion existente entre una variable de entrada y una variable de salida.
     Surje de responder cual es el resultado que queremos obtener para un derterminado valor.
     -Ej1
