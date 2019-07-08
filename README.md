@@ -92,3 +92,23 @@
     Que correo es span o no?
     -Ej3
     A partir de una cuenta de instagram se puede saber si una persona puede sufir deprecion?
+
+
+# Mail
+
+    Buenas chic@s de persistencia! 
+
+    De parte de Two&HalfWoman queriamos invitarlos a presenciar la precentacion que haremos este viernes
+    a las 20:30Hrs. 
+    Para hacer una pequeña intro, vamos a dar respuestas a preguntas como:
+    
+    - Que es machine learning?
+    - Que diferencias hay con deep learning?
+    - Que toca en todo esto la inteligencia artificial?
+    - Como se puede aplicar? 
+    - frameworks
+    - y mas...
+
+    Para la presentacion hicimos una pagina web la que vas a poder acceder a todos los contenidos teoricos, incluso a una demo sencilla usando tensor flow.
+
+    Los esperamos a todos, saludos!
