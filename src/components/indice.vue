@@ -888,7 +888,7 @@
                 </svg>
         </div>
         <div id="contenedorDeLinks">
-            <div class="introduccion" @click="onOffIntroduccion=!onOffIntroduccion">
+            <div class="introduccion" @click="introduccion()">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 849 200">
                     <linearGradient id="Nueva_muestra_de_degradado_4" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#ad1c5a"/><stop offset="0.36" stop-color="#c42351"/>
@@ -902,14 +902,17 @@
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="849" height="200" rx="100"/>
-                                
+                                <text transform="translate(202 120)">
+                                    <tspan v-bind:class="getClaseTexto(this.onOffIntroduccion)">Introduccion</tspan>
+                                </text>
                                 <circle v-bind:class="getClaseR(this.onOffIntroduccion)" cx="104" cy="101" r="90"/>
+                                <path transform="translate(655 10)" style="fill:url(#linear-gradient)" v-show="this.onOffIntroduccion" d="M44.82,93.34a24,24,0,0,0,4.38,4.51c5.12,4.1,22.83,18.26,26.5,21a13,13,0,0,0,14.6,0c3-2.24,33.36-33.08,45.65-45.56a8.93,8.93,0,0,0-.42-13L135.3,60a9,9,0,0,0-12,.66L95.43,88.57a17.59,17.59,0,0,1-24.86,0l-4.89-4.89a17.91,17.91,0,0,0-11.05-5.29A13.74,13.74,0,0,0,45,81C40,84.75,42.35,90,44.82,93.34Z"/>
                             </g>
                         </g>
                     </g>
                 </svg>       
             </div>
-            <div class="modelo" @click="onOffModelo=!onOffModelo">
+            <div class="modelo" @click="modelo()">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 897 200">
                     <linearGradient id="Nueva_muestra_de_degradado_4" x1="702" y1="100" x2="882" y2="100" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#ad1c5a"/>
@@ -925,13 +928,17 @@
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="897" height="200" rx="100"/>
+                                <text transform="translate(250 120)">
+                                    <tspan v-bind:class="getClaseTexto(this.onOffModelo)">Modelo</tspan>
+                                </text>
                                 <circle v-bind:class="getClaseL(this.onOffModelo)" cx="792" cy="100" r="90"/>
+                                <path transform="translate(10 10)" style="fill:url(#linear-gradient)" v-show="this.onOffModelo" d="M44.82,93.34a24,24,0,0,0,4.38,4.51c5.12,4.1,22.83,18.26,26.5,21a13,13,0,0,0,14.6,0c3-2.24,33.36-33.08,45.65-45.56a8.93,8.93,0,0,0-.42-13L135.3,60a9,9,0,0,0-12,.66L95.43,88.57a17.59,17.59,0,0,1-24.86,0l-4.89-4.89a17.91,17.91,0,0,0-11.05-5.29A13.74,13.74,0,0,0,45,81C40,84.75,42.35,90,44.82,93.34Z"/>
                             </g>
                         </g>
                     </g>
                 </svg>
             </div>
-            <div class="paradigmas" @click="onOffParadigma=!onOffParadigma">
+            <div class="paradigmas" @click="paradigma()">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 849 200">
                     <linearGradient id="Nueva_muestra_de_degradado_4" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#ad1c5a"/><stop offset="0.36" stop-color="#c42351"/>
@@ -945,13 +952,17 @@
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="849" height="200" rx="100"/>
+                                <text transform="translate(210 120)">
+                                    <tspan v-bind:class="getClaseTexto(this.onOffParadigma)">paradigmas</tspan>
+                                </text>
                                 <circle v-bind:class="getClaseR(this.onOffParadigma)" cx="104" cy="101" r="90"/>
+                                <path transform="translate(655 10)" style="fill:url(#linear-gradient)" v-show="this.onOffParadigma" d="M44.82,93.34a24,24,0,0,0,4.38,4.51c5.12,4.1,22.83,18.26,26.5,21a13,13,0,0,0,14.6,0c3-2.24,33.36-33.08,45.65-45.56a8.93,8.93,0,0,0-.42-13L135.3,60a9,9,0,0,0-12,.66L95.43,88.57a17.59,17.59,0,0,1-24.86,0l-4.89-4.89a17.91,17.91,0,0,0-11.05-5.29A13.74,13.74,0,0,0,45,81C40,84.75,42.35,90,44.82,93.34Z"/>
                             </g>
                         </g>
                     </g>
                 </svg>    
             </div>
-            <div class="ejemplo" @click="onOffEjemplo=!onOffEjemplo">
+            <div class="ejemplo" @click="demo()">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 897 200">
                      <linearGradient id="Nueva_muestra_de_degradado_4" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#ad1c5a"/><stop offset="0.36" stop-color="#c42351"/>
@@ -965,32 +976,65 @@
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="897" height="200" rx="100"/>
+                                <text transform="translate(250 120)">
+                                    <tspan v-bind:class="getClaseTexto(this.onOffEjemplo)">Demo</tspan>
+                                </text>
                                 <circle v-bind:class="getClaseL(this.onOffEjemplo)" cx="792" cy="100" r="90"/>
+                                <path transform="translate(10 10)" style="fill:url(#linear-gradient)" v-show="this.onOffEjemplo" d="M44.82,93.34a24,24,0,0,0,4.38,4.51c5.12,4.1,22.83,18.26,26.5,21a13,13,0,0,0,14.6,0c3-2.24,33.36-33.08,45.65-45.56a8.93,8.93,0,0,0-.42-13L135.3,60a9,9,0,0,0-12,.66L95.43,88.57a17.59,17.59,0,0,1-24.86,0l-4.89-4.89a17.91,17.91,0,0,0-11.05-5.29A13.74,13.74,0,0,0,45,81C40,84.75,42.35,90,44.82,93.34Z"/>
                             </g>
                         </g>
                     </g>
                 </svg>
             </div>
         </div>
-        <div id="contendedorDelIndice"></div>
+        <div id="contendedorDelIndice" v-show="onOffGeneral" @dblclick="closeAll()">
+            <div class="closeContenedor" v-show="onOffGeneral" @click="closeAll()">
+                <h1> X </h1>
+            </div>
+            <introduccion v-show="onOffPI"/>
+            <modelo v-show="onOffPM"/>
+            <paradigmas v-show="onOffPP"/>
+            <demo v-show="onOffPE"/>
+        </div>
     </div>
 </template>
 
 <script>
+import introduccion from '@/components/Introduccion.vue'
+import modelo from '@/components/Modelo.vue'
+import paradigmas from '@/components/Paradigma.vue'
+import demo from '@/components/Ejemplo.vue'
+
 export default {
  name: 'indice',
+ components:{
+     introduccion,
+     modelo,
+     paradigmas,
+     demo
+ },
  data(){
     return{
         claseOff: 'colorDeGradienteRosa',
         claseOnR: 'colorDeGradienteVerdeToRight',
         claseOnL: 'colorDeGradienteVerdeToLeft',
+        claseTexto: 'texto',
+        claseTextoOk: 'textoOk',
+        onOffGeneral:false,
         onOffIntroduccion: false,
         onOffModelo: false,
         onOffParadigma: false,
         onOffEjemplo: false,
+        onOffPI:false,
+        onOffPM:false,
+        onOffPP:false,
+        onOffPE:false,
     }
  },
  methods:{
+    selectorDeTexto(onOff){
+        return onOff? this.claseTextoOk:this.claseTexto;
+    },
     selectorR(onOff){
         return onOff? this.claseOnR:this.claseOff;
     },
@@ -1002,6 +1046,48 @@ export default {
     },
     getClaseL(clase){
         return this.selectorL(clase);
+    },
+    getClaseTexto(clase){
+        return this.selectorDeTexto(clase);
+    },
+    introduccion(){
+        this.onOffIntroduccion = !this.onOffIntroduccion;
+        this.onOffGeneral = this.onOffIntroduccion;
+        this.onOffPI = true;
+        this.onOffPM = false;
+        this.onOffPP = false;
+        this.onOffPE = false;
+    },
+    modelo(){
+        this.onOffModelo = !this.onOffModelo;
+        this.onOffGeneral = this.onOffModelo;
+        this.onOffPI = false;
+        this.onOffPM = true;
+        this.onOffPP = false;
+        this.onOffPE = false;
+    },
+    paradigma(){
+        this.onOffParadigma = !this.onOffParadigma;
+        this.onOffGeneral = this.onOffParadigma;
+        this.onOffPI = false;
+        this.onOffPM = false;
+        this.onOffPP = true;
+        this.onOffPE = false;
+    },
+    demo(){
+        this.onOffEjemplo = !this.onOffEjemplo;
+        this.onOffGeneral = this.onOffEjemplo;
+        this.onOffPI = false;
+        this.onOffPM = false;
+        this.onOffPP = false;
+        this.onOffPE = true;
+    },
+    closeAll(){
+        this.onOffGeneral = false;
+        this.onOffPI = false;
+        this.onOffPM = false;
+        this.onOffPP = false;
+        this.onOffPE = false;
     }
  }
 }
@@ -1032,6 +1118,7 @@ export default {
     #contenedorDeLinks .introduccion .cls-1{fill:#0388a6;}
 
     #contenedorDeLinks .introduccion{
+        cursor: pointer;  
         position:relative;
         top: -110vh;
         left: 37vw;
@@ -1043,6 +1130,7 @@ export default {
     #contenedorDeLinks .modelo .cls-1{fill:#0388a6;}
 
     #contenedorDeLinks .modelo{
+        cursor: pointer;  
         position:relative;
         top: -110vh;
         left: 42vw;
@@ -1054,6 +1142,7 @@ export default {
     #contenedorDeLinks .paradigmas .cls-1{fill:#0388a6;}
     
     #contenedorDeLinks .paradigmas{
+        cursor: pointer;  
         position:relative;
         top: -110vh;
         left: 35vw;
@@ -1065,6 +1154,7 @@ export default {
     #contenedorDeLinks .ejemplo .cls-1{fill:#0388a6;}
 
     #contenedorDeLinks .ejemplo{
+        cursor: pointer;  
         position:relative;
         top: -114.8vh;
         left: 40vw;
@@ -1074,40 +1164,70 @@ export default {
     /*****************************************************/
 
     .colorDeGradienteRosa{
+        cursor: pointer;  
         fill:url(#Nueva_muestra_de_degradado_4);
         transition:1s;
     }
-
+    
     .colorDeGradienteVerdeToRight{
+        cursor: pointer;  
         fill:url(#Nueva_muestra_de_degradado_5);
         transform: translateX(640px);
         transition:1s;
     }
 
     .colorDeGradienteVerdeToLeft{
+        cursor: pointer;  
         fill:url(#Nueva_muestra_de_degradado_5);
         transform: translateX(-689px);
         transition:1s;
     }
-    /*
+
+    .texto{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size:5rem;
+        fill:#fff;
+        transition:1s;
+    }
+
+    .textoOk{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size:5rem;
+        fill:#81c418;;
+        transition:1s;
+    }
+
     #contendedorDelIndice{
+        position: fixed;
+        top:0px;
+        left:0px;
+        width:100vw;
+        height:100vh;
+        color: white;
+        z-index: 10;
+    }
+
+    #contendedorDelIndice::before{
+        content:' ';
         position:absolute;
         top:0px;
         left:0px;
         width:100%;
         height:100%;
+        background: rgba(10,33,44,.71);
+        z-index: -1;
     }
     
-        #contendedorDelIndice:before{
-            content:' ';
-            position:absolute;
-            top:0px;
-            left:0px;
-            width:100%;
-            height:100%;
-            background: rgba(10,33,44,.6);
-        }
-    */
+    #contendedorDelIndice .closeContenedor{
+        position: absolute;
+        top:20px;
+        right:50px; 
+        font-family: 'Courier New', Courier, monospace;
+        cursor: pointer;  
+    }
+
     #cerebro-colorido .cls-1{isolation:isolate;}
     #cerebro-colorido .cls-189,.cls-2{fill:#967878;}
     #cerebro-colorido .cls-3{fill:#7a6666;}

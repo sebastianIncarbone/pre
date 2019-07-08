@@ -13,7 +13,7 @@
             <div class="chart">
 
             </div>
-            <div class="valorPredicho">
+            <!-- <div class="valorPredicho">
                 <input type="number" v-bind="valorDeEntrada">
                 <h2 v-text="predicho"></h2>
             </div>            
@@ -22,27 +22,13 @@
                 <input type="number" v-bind="valorY">
                 <button @click="addValue()"></button>
                 <input type="number" v-bind="iteracciones">
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
 
 <script>
 import * as tf from '@tensorflow/tfjs';
- 
-async function learn(valoresDeAprendizajeParaX,valoresDeAprendizajeParaY,iteracciones,valorFuturo){
-    const model = tf.sequential();
-    
-    model.add(tf.layers.dense({units: 1, inputShape: [1]}));
-    model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
-    
-    const xs = tf.tensor2d(valoresDeAprendizajeParaX, [valoresDeAprendizajeParaX.lenght, 1]);
-    const ys = tf.tensor2d(valoresDeAprendizajeParaY, [valoresDeAprendizajeParaY.lenght, 1]);
-    
-    await model.fit(xs, ys, {epochs:iteracciones});
-
-    var res = model.predict(tf.tensor2d([valorFuturo],[1,1])).print();
-}
 
 export default {
     name:'demo',
