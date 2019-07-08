@@ -987,14 +987,14 @@
                 </svg>
             </div>
         </div>
-        <div id="contendedorDelIndice" v-show="onOffGeneral" @dblclick="closeAll()">
-            <div class="closeContenedor" v-show="onOffGeneral" @click="closeAll()">
+        <div id="contendedorDelIndice" v-if="onOffGeneral">
+            <div class="closeContenedor" v-if="onOffGeneral" @click="closeAll()">
                 <h1> X </h1>
             </div>
-            <introduccion v-show="onOffPI"/>
-            <modelo v-show="onOffPM"/>
-            <paradigmas v-show="onOffPP"/>
-            <demo v-show="onOffPE"/>
+            <introduccion v-if="onOffPI"/>
+            <modelo v-if="onOffPM"/>
+            <paradigmas v-if="onOffPP"/>
+            <demo v-if="onOffPE"/>
         </div>
     </div>
 </template>

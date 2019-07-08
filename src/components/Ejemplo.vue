@@ -1,10 +1,16 @@
 <template>
-    <div class="ejemplo">
-        <div class="queUsamos">
+    <div id="demo">
+        <div class="incrementar" >
+            <h1 v-text="'>'" @click="sumar()"></h1>
+        </div>
+        <div class="decrementar" >
+            <h1 v-text="'<'" @click="restar()"></h1>
+        </div>
+        <div class="card queUsamos" v-show="this.contador <= 0">
             <h2>Que frameworks hay?</h2>
             <!-- - [Lau] -> tensor flow -->
         </div>
-        <div class="demo">
+        <div class="card demo" v-show="this.contador >= 1">
             <h2>La demo</h2>
             <!-- - [Seba] -> muestra de la demo	 -->
             <p>
@@ -41,12 +47,19 @@ export default {
             iteracciones:200,
             valorDeEntrada:0,
             predicho:0,
+            contador:0
         }
     },
     methods:{
         addValor(){
             valoresX.push(valorX);
             valoresY.push(valorY);
+        },
+        sumar(){
+            this.contador = this.contador >= 1? 1:this.contador + 1; 
+        },
+        restar(){
+            this.contador = this.contador < 0? 0:this.contador - 1;
         },
         async entrenar(){
             const model = tf.sequential();
@@ -66,5 +79,29 @@ export default {
 </script>
 
 <style>
-
+    #demo{
+        display: flexbox;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 3em;
+    }
+    #demo .decrementar{
+        position: absolute;
+        top:50vh;
+        left:20px;
+        cursor: pointer;
+    }
+    #demo .incrementar{
+        position: absolute;
+        top:50vh;
+        right:50px;
+        cursor: pointer;
+    }
+    #demo .card{
+        position: absolute;
+        height: 80vh;
+        width: 90vw;
+        background: rgba(54, 53, 55, 0.5);
+    }
 </style>

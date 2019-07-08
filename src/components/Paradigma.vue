@@ -1,22 +1,28 @@
 <template>
-    <div class="paradigmas">
-        <div class="que">
+    <div id="parad">
+        <div class="incrementar" >
+            <h1 v-text="'>'" @click="sumar()"></h1>
+        </div>
+        <div class="decrementar" >
+            <h1 v-text="'<'" @click="restar()"></h1>
+        </div>
+        <div class="card que" v-show="this.contador <= 0">
             <h2>Que es un paradigma?</h2>
             <!-- - [Ami] -> Que es un Paradigma? -->
         </div>
-        <div class="CualesHay">
+        <div class="card CualesHay" v-show="this.contador == 1">
             <h2>Cuales hay dentro de ML?</h2>
             <!-- - [Nahu] -> Cuales hay en este campo de ML? -->
         </div>
-        <div class="supervisado">
+        <div class="card supervisado" v-show="this.contador == 2">
             <h3>Supervisado</h3>
             <!-- - [Lau] -> Supervisado -->
         </div>
-        <div>
+        <div class="card noSupervisado" v-show="this.contador == 3">
             <h3>No supervisado</h3>
             <!-- - [Seba] -> No Supervisado -->
         </div>
-        <div class="reforzado">
+        <div class="card reforzado" v-show="this.contador >= 4">
             <h3>Reforzado</h3>
             <!-- - [Nahu] -> Reforzado -->
         </div>
@@ -26,9 +32,46 @@
 <script>
 export default {
  name:'paradigmas',
+    data(){
+        return{
+            contador:0
+        }
+    },
+    methods:{
+        sumar(){
+            this.contador = this.contador >= 4? 4:this.contador + 1; 
+        },
+        restar(){
+            this.contador = this.contador < 0? 0:this.contador - 1;
+        }
+    }
 }
 </script>
 
 <style>
-
+    #parad{
+        display: flexbox;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 3em;
+    }
+    #parad .decrementar{
+        position: absolute;
+        top:50vh;
+        left:20px;
+        cursor: pointer;
+    }
+    #parad .incrementar{
+        position: absolute;
+        top:50vh;
+        right:50px;
+        cursor: pointer;
+    }
+    #parad .card{
+        position: absolute;
+        height: 80vh;
+        width: 90vw;
+        background: rgba(54, 53, 55, 0.5);
+    }
 </style>
