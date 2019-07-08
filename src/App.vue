@@ -6,19 +6,14 @@
     <indice id="indice"/>
     <linksDeEjemplos id="linksDeEjemplos"/>
     <about id="about"/>
-    <!--
-        <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
-        </div>
-        <router-view/> 
-    -->
-  
+    <menuIcon id="menu"/>
+
   </div>
 </template>
 
 <script>
 import background from '@/components/Background.vue'
+import menuIcon from '@/components/MenuIcon.vue'
 import home from '@/components/Home.vue'
 import indice from '@/components/Indice.vue'
 import linksDeEjemplos from '@/components/LinksDeEjemplos.vue'
@@ -27,10 +22,11 @@ import about from '@/components/About.vue'
 export default {
   components:{ 
     background,
+    menuIcon,
     home,
     indice,
     linksDeEjemplos,
-    about
+    about,
   }  
 }
 </script>
@@ -45,6 +41,14 @@ export default {
     max-width: 98.7vw;
     overflow: hidden;
     z-index: -1;
+  }
+
+  #menu{
+    position: fixed;
+    top:20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
   }
 
   #bienvenida{

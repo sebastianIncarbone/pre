@@ -41,15 +41,15 @@
                 <clipPath id="clip-path" transform="translate(0 -17.61)">
                     <rect class="cls-1" x="0" width="2442.39" height="2441"/>
                 </clipPath>
-                <linearGradient id="Nueva_muestra_de_degradado_4" x1="-1688.67" y1="227.67" x2="1.52" y2="227.67" gradientTransform="translate(1473.39 483.47) rotate(-43.79)" gradientUnits="userSpaceOnUse">
+                <linearGradient id="Nueva_muestra_de_degradado_4"  gradientTransform="translate(1473.39 483.47) rotate(-43.79)" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stop-color="#ad1c5a"/>
                 <stop offset="0.36" stop-color="#c42351"/>
                 <stop offset="0.72" stop-color="#d52849"/>
                 <stop offset="1" stop-color="#db2a47"/>
                 </linearGradient>
-                <linearGradient id="Nueva_muestra_de_degradado_4-2" x1="-1492.89" y1="-2251.1" x2="-344.43" y2="-2251.1" gradientTransform="matrix(-0.03, -1, 1, -0.03, 2971.4, 25.76)" xlink:href="#Nueva_muestra_de_degradado_4"/>
-                <linearGradient id="Nueva_muestra_de_degradado_4-3" x1="-1774.37" y1="-1122.21" x2="-100.13" y2="-1122.21" gradientTransform="matrix(-0.03, -1, 1, -0.03, 2971.4, 25.76)" xlink:href="#Nueva_muestra_de_degradado_4"/>
-                <radialGradient id="Nueva_muestra_de_degradado_13" cx="3150.94" cy="-2015.71" r="84.65" gradientTransform="matrix(-1.81, -0.09, 0.07, -2.13, 7265.61, -3119.42)" gradientUnits="userSpaceOnUse">
+                <linearGradient id="Nueva_muestra_de_degradado_4-2"  gradientTransform="matrix(-0.03, -1, 1, -0.03, 2971.4, 25.76)" xlink:href="#Nueva_muestra_de_degradado_4"/>
+                <linearGradient id="Nueva_muestra_de_degradado_4-3" gradientTransform="matrix(-0.03, -1, 1, -0.03, 2971.4, 25.76)" xlink:href="#Nueva_muestra_de_degradado_4"/>
+                <radialGradient id="Nueva_muestra_de_degradado_13" gradientTransform="matrix(-1.81, -0.09, 0.07, -2.13, 7265.61, -3119.42)" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stop-color="#754153"/>
                 <stop offset="0.01" stop-color="#774355"/>
                 <stop offset="0.14" stop-color="#9b7582"/>

@@ -47,9 +47,11 @@ export default {
 
 <style>
     .ejemplo .mnj1 .cls-1{fill:#ebebeb;}
+
     .ejemplo .mnj2 .cls-1{fill:#072940;}
-    .ejemplo .mnj3 .cls-1{fill:#f23b3d;}
     
+    .ejemplo .mnj3 .cls-1{fill:#f23b3d;}
+
     .ejemplo{
         position:relative;
         top:-640px;
@@ -57,23 +59,47 @@ export default {
     }
 
     .ejemplo .mnj1{
+        transform: rotateZ(0deg);
         width:55vw;
     }
     
     .ejemplo .mnj2{
+        transform: rotateZ(0deg);
         float:right;
         width:40vw;
         height:auto;
     }
     
     .ejemplo .mnj3{
+        transform: rotateZ(0deg);
         float:left;
         width:40vw;
     }
     
     .ejemplo .mnj4{
+        transform: rotateZ(0deg);
         float:right;
         width:50vw;
+    }
+    
+    .ejemplo .mnj1:active{
+        transform: rotateZ(30deg);
+        transition:1s;
+    }
+    
+    .ejemplo .mnj2:active{
+        transform: rotateZ(-30deg);
+        transition:1s;
+    }
+    
+    .ejemplo .mnj3:active{
+        transform: rotateZ(30deg);
+        transition:1s;
+    }
+    
+    .ejemplo .mnj4:active{
+        transform: rotateZ(-30deg);
+        transition:1s;
     }
 
 </style>

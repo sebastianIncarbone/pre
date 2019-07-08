@@ -902,6 +902,7 @@
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="849" height="200" rx="100"/>
+                                
                                 <circle v-bind:class="getClaseR(this.onOffIntroduccion)" cx="104" cy="101" r="90"/>
                             </g>
                         </g>
@@ -971,6 +972,7 @@
                 </svg>
             </div>
         </div>
+        <div id="contendedorDelIndice"></div>
     </div>
 </template>
 
@@ -1007,6 +1009,105 @@ export default {
 
 <style>
 
+    @media (max-width: 900px) {
+        
+        #cerebro-colorido{
+        position:relative;
+        top: -40vh;
+        width:45vw;
+        }
+    }  
+    
+    @media (min-width: 901px) {
+        
+        #cerebro-colorido{
+        position:relative;
+        top: -10vh;
+        width:45vw;
+        }
+    }  
+
+    /*****************************************************/
+
+    #contenedorDeLinks .introduccion .cls-1{fill:#0388a6;}
+
+    #contenedorDeLinks .introduccion{
+        position:relative;
+        top: -110vh;
+        left: 37vw;
+        width: 40vw;
+    }
+    
+    /*****************************************************/
+    
+    #contenedorDeLinks .modelo .cls-1{fill:#0388a6;}
+
+    #contenedorDeLinks .modelo{
+        position:relative;
+        top: -110vh;
+        left: 42vw;
+        width: 40vw;
+    }
+    
+    /*****************************************************/
+    
+    #contenedorDeLinks .paradigmas .cls-1{fill:#0388a6;}
+    
+    #contenedorDeLinks .paradigmas{
+        position:relative;
+        top: -110vh;
+        left: 35vw;
+        width: 40vw;
+    }
+    
+    /*****************************************************/
+    
+    #contenedorDeLinks .ejemplo .cls-1{fill:#0388a6;}
+
+    #contenedorDeLinks .ejemplo{
+        position:relative;
+        top: -114.8vh;
+        left: 40vw;
+        width: 40vw;
+    }
+
+    /*****************************************************/
+
+    .colorDeGradienteRosa{
+        fill:url(#Nueva_muestra_de_degradado_4);
+        transition:1s;
+    }
+
+    .colorDeGradienteVerdeToRight{
+        fill:url(#Nueva_muestra_de_degradado_5);
+        transform: translateX(640px);
+        transition:1s;
+    }
+
+    .colorDeGradienteVerdeToLeft{
+        fill:url(#Nueva_muestra_de_degradado_5);
+        transform: translateX(-689px);
+        transition:1s;
+    }
+    /*
+    #contendedorDelIndice{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:100%;
+    }
+    
+        #contendedorDelIndice:before{
+            content:' ';
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            background: rgba(10,33,44,.6);
+        }
+    */
     #cerebro-colorido .cls-1{isolation:isolate;}
     #cerebro-colorido .cls-189,.cls-2{fill:#967878;}
     #cerebro-colorido .cls-3{fill:#7a6666;}
@@ -1199,85 +1300,4 @@ export default {
     #cerebro-colorido .cls-190{fill:#524545;}
     #cerebro-colorido .cls-191{fill:#ededed;}
 
-    @media (max-width: 900px) {
-        
-        #cerebro-colorido{
-        position:relative;
-        top: -40vh;
-        width:45vw;
-        }
-    }  
-    
-    @media (min-width: 901px) {
-        
-        #cerebro-colorido{
-        position:relative;
-        top: -10vh;
-        width:45vw;
-        }
-    }  
-    
-
-    /*****************************************************/
-
-    #contenedorDeLinks .introduccion .cls-1{fill:#0388a6;}
-
-    #contenedorDeLinks .introduccion{
-        position:relative;
-        top: -110vh;
-        left: 37vw;
-        width: 40vw;
-    }
-    
-    /*****************************************************/
-    
-    #contenedorDeLinks .modelo .cls-1{fill:#0388a6;}
-
-    #contenedorDeLinks .modelo{
-        position:relative;
-        top: -110vh;
-        left: 42vw;
-        width: 40vw;
-    }
-    
-    /*****************************************************/
-    
-    #contenedorDeLinks .paradigmas .cls-1{fill:#0388a6;}
-    
-    #contenedorDeLinks .paradigmas{
-        position:relative;
-        top: -110vh;
-        left: 35vw;
-        width: 40vw;
-    }
-    
-    /*****************************************************/
-    
-    #contenedorDeLinks .ejemplo .cls-1{fill:#0388a6;}
-
-    #contenedorDeLinks .ejemplo{
-        position:relative;
-        top: -114.8vh;
-        left: 40vw;
-        width: 40vw;
-    }
-
-    /*****************************************************/
-
-    .colorDeGradienteRosa{
-        fill:url(#Nueva_muestra_de_degradado_4);
-        transition:1s;
-    }
-
-    .colorDeGradienteVerdeToRight{
-        fill:url(#Nueva_muestra_de_degradado_5);
-        transform: translateX(640px);
-        transition:1s;
-    }
-
-    .colorDeGradienteVerdeToLeft{
-        fill:url(#Nueva_muestra_de_degradado_5);
-        transform: translateX(-689px);
-        transition:1s;
-    }
 </style>
