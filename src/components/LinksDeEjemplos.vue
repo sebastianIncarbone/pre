@@ -54,7 +54,7 @@ export default {
 
     .ejemplo{
         position:relative;
-        top:-640px;
+        top:-500px;
         padding:2.4em;
     }
 

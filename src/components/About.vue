@@ -105,16 +105,15 @@
 <style>
 .about{    
     position:relative;
-    left:-29vw;
+    left:-400px;
     display:flex;
     flex-direction:row;
+    align-content: center;
     justify-content: space-between;
 }
 
 .c1, .c2, .c3, .c4{
     padding:50px;
-    width:30vw;
-    height:30vh;
 } 
 
 .circulo{
