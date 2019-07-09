@@ -4,25 +4,25 @@
 
 - Introduccion
     - [Lau] -> Historia breve
-    - [Seba] -> Redes neuronales concepto
+    - [Nahu] -> Redes neuronales concepto
     - [Ami] -> Que es machine learning?
     - [Nahu] -> Como se relaciona con la Inteligencia Artificial
-    - [Lau] -> Diferencias con Deep Learning
+    - [Ami] -> Diferencias con Deep Learning
 - Modelo
-    - [Lau] -> Que es un modelo?
-    - [Seba] -> Que datos ingresan en un modelo?
-    - [Ami] -> Los parametros del modelo
-    - [Nahu] -> El error
-    - [Lau] -> Que es regresion lineal?
-    - [Seba] -> Metodo de cuadrados ordinarios
-    - [Nahu] -> Regrecion Lineal Simple
-    - [Lau] -> Regrecion Lineal Multiple
-    - [Seba] -> Comparar con tensor flow
+    - [Seba-Lau] -> Que es un modelo?
+    - [Seba-Lau] -> Que datos ingresan en un modelo?
+    - [Seba-Lau] -> Los parametros del modelo
+    - [Seba-Lau] -> El error
+    - [Seba-Nahu] -> Que es regresion lineal?
+    - [Seba-Nahu] -> Metodo de cuadrados ordinarios
+    - [Seba-Nahu] -> Regrecion Lineal Simple
+    - [Seba-Nahu] -> Regrecion Lineal Multiple
+    - [Lau] -> Comparar con tensor flow
 - Paradigmas
     - [Ami] -> Que es un Paradigma?
-    - [Nahu] -> Cuales hay en este campo de ML?
-    - [Lau] -> Supervisado
-    - [Seba] -> No Supervisado
+    - [Ami] -> Cuales hay en este campo de ML?
+    - [Ami] -> Supervisado
+    - [Nahu] -> No Supervisado
     - [Nahu] -> Reforzado
 - Ejemplo
     - [Lau] -> tensor flow
