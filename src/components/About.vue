@@ -9,7 +9,9 @@
 
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
-                <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
+                <a href="https://www.google.com" target="_blank">
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt">G</i>
+                </a>
             </div>
         </div>
         <div id="circulo-b2" class="circulo-back">
