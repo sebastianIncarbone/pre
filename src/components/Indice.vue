@@ -953,7 +953,7 @@
                             <g id="Layer_5" data-name="Layer 5">
                                 <rect class="cls-1" width="849" height="200" rx="100"/>
                                 <text transform="translate(210 120)">
-                                    <tspan v-bind:class="getClaseTexto(this.onOffParadigma)">paradigmas</tspan>
+                                    <tspan v-bind:class="getClaseTexto(this.onOffParadigma)">Paradigmas</tspan>
                                 </text>
                                 <circle v-bind:class="getClaseR(this.onOffParadigma)" cx="104" cy="101" r="90"/>
                                 <path transform="translate(655 10)" style="fill:url(#linear-gradient)" v-show="this.onOffParadigma" d="M44.82,93.34a24,24,0,0,0,4.38,4.51c5.12,4.1,22.83,18.26,26.5,21a13,13,0,0,0,14.6,0c3-2.24,33.36-33.08,45.65-45.56a8.93,8.93,0,0,0-.42-13L135.3,60a9,9,0,0,0-12,.66L95.43,88.57a17.59,17.59,0,0,1-24.86,0l-4.89-4.89a17.91,17.91,0,0,0-11.05-5.29A13.74,13.74,0,0,0,45,81C40,84.75,42.35,90,44.82,93.34Z"/>

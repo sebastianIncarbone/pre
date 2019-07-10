@@ -12,19 +12,31 @@
         </div>
         <div class="card redesNeuronales" v-show="this.contador == 1">
             <h2>Redes neuronales</h2>
-            <!-- - [Seba] -> Redes neuronales concepto -->
+            <!-- - [Nahu] -> Redes neuronales concepto -->
+            <p>
+                También conocidas como Redes Neuronales Artificiales (ANN, por sus siglas en inglés), es un modelo implícito
+                de la neurona biológica (elaborado) para tomar decisiones y (llegar) a conclusiones simulando el 
+                funcionamiento del cerebro humano (Bryant y Frigaard, 2006).
+            </p>
+            <p>
+                
+            </p>
         </div>
         <div class="card queEs" v-show="this.contador == 2">
-            <h2>Que es machine learning?</h2>
+            <h2>¿Que es Machine Learning?</h2>
             <!-- - [Ami] -> Que es machine learning? -->
         </div>
         <div class="card integracionConIa" v-show="this.contador == 3">
-            <h2>como se relaciona esto con IA?</h2>
+            <h2>¿Cómo se relaciona esto con IA?</h2>
             <!-- - [Nahu] -> Como se relaciona con la Inteligencia Artificial -->
         </div>
-        <div class="card deepLearning" v-show="this.contador > 3">
-            <h2>Y deep learning? Que es?</h2>
-            <!-- - [Lau] -> Diferencias con Deep Learning -->
+        <div class="card deepLearning" v-show="this.contador == 4">
+            <h2>¿Y deep learning? ¿Qué es?</h2>
+            <!-- - [Ami] -> Diferencias con Deep Learning -->
+        </div>
+        <div class="card fuentes" v-show="this.contador > 4">
+            <h2>Fuentes</h2>
+            <!-- - [Todos] -> Fuentes -->
         </div>
     </div> 
 </template>
@@ -39,7 +51,7 @@ export default {
     },
     methods:{
         sumar(){
-            this.contador = this.contador >= 4? 4:this.contador + 1; 
+            this.contador = this.contador >= 5? 5:this.contador + 1; 
         },
         restar(){
             this.contador = this.contador < 0? 0:this.contador - 1;
@@ -73,5 +85,8 @@ export default {
         height: 80vh;
         width: 90vw;
         background: rgba(54, 53, 55, 0.5);
+    }
+    #intro h2{
+        margin-left: 5%;
     }
 </style>

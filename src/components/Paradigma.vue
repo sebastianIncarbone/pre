@@ -7,24 +7,28 @@
             <h1 v-text="'<'" @click="restar()"></h1>
         </div>
         <div class="card que" v-show="this.contador <= 0">
-            <h2>Que es un paradigma?</h2>
+            <h2>¿Que es un Paradigma?</h2>
             <!-- - [Ami] -> Que es un Paradigma? -->
         </div>
         <div class="card CualesHay" v-show="this.contador == 1">
-            <h2>Cuales hay dentro de ML?</h2>
-            <!-- - [Nahu] -> Cuales hay en este campo de ML? -->
+            <h2>¿Cuáles hay dentro de ML?</h2>
+            <!-- - [Ami] -> Cuales hay en este campo de ML? -->
         </div>
         <div class="card supervisado" v-show="this.contador == 2">
             <h3>Supervisado</h3>
-            <!-- - [Lau] -> Supervisado -->
+            <!-- - [Ami] -> Supervisado -->
         </div>
         <div class="card noSupervisado" v-show="this.contador == 3">
             <h3>No supervisado</h3>
-            <!-- - [Seba] -> No Supervisado -->
+            <!-- - [Nahu] -> No Supervisado -->
         </div>
-        <div class="card reforzado" v-show="this.contador >= 4">
+        <div class="card reforzado" v-show="this.contador == 4">
             <h3>Reforzado</h3>
             <!-- - [Nahu] -> Reforzado -->
+        </div>
+        <div class="card fuentes" v-show="this.contador >= 5">
+            <h2>Fuentes</h2>
+            <!-- - [Todos] -> Fuentes -->
         </div>
     </div>    
 </template>
@@ -39,7 +43,7 @@ export default {
     },
     methods:{
         sumar(){
-            this.contador = this.contador >= 4? 4:this.contador + 1; 
+            this.contador = this.contador >= 5? 5:this.contador + 1; 
         },
         restar(){
             this.contador = this.contador < 0? 0:this.contador - 1;
