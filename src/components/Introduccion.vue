@@ -13,14 +13,23 @@
         <div class="card redesNeuronales" v-show="this.contador == 1">
             <h2>Redes neuronales</h2>
             <!-- - [Nahu] -> Redes neuronales concepto -->
-            <p>
+            <p class="elemContenedor">
                 También conocidas como Redes Neuronales Artificiales (ANN, por sus siglas en inglés), es un modelo implícito
                 de la neurona biológica (elaborado) para tomar decisiones y (llegar) a conclusiones simulando el 
                 funcionamiento del cerebro humano (Bryant y Frigaard, 2006).
             </p>
-            <p>
-                
-            </p>
+            <div class="contenedorConGrafico">
+                <div class="grafico elemContenedor">
+                    <img src="../assets/neuralnetworkmap.png" height="350px" width="300px"/>
+                </div>
+                <div class="elemContenedor">
+                    <p>
+                        Las redes neurales se estructuran en 
+                    </p>
+                    <img src="../assets/nnnode.png" height="200px" width="400px"/>                    
+                </div>
+            </div>
+            
         </div>
         <div class="card queEs" v-show="this.contador == 2">
             <h2>¿Que es Machine Learning?</h2>
@@ -37,6 +46,12 @@
         <div class="card fuentes" v-show="this.contador > 4">
             <h2>Fuentes</h2>
             <!-- - [Todos] -> Fuentes -->
+            <div class="fuentes-body">
+            <p>
+                (<a href="https://en.wikipedia.org/wiki/Artificial_neural_network">2</a>). https://en.wikipedia.org/wiki/Artificial_neural_network
+                (<a href="https://skymind.ai/wiki/neural-network">3</a>). https://skymind.ai/wiki/neural-network
+            </p>
+            </div>
         </div>
     </div> 
 </template>
@@ -87,6 +102,29 @@ export default {
         background: rgba(54, 53, 55, 0.5);
     }
     #intro h2{
-        margin-left: 5%;
+        margin-left: 2%;
+    }
+    #intro .fuentes-body{
+        margin-left: 2%;
+        font-size: 16px;
+    }
+    #intro .contenedorConGrafico{
+        position:relative;
+        display:flex;
+        flex-direction:row;
+        align-content: center;
+        justify-content: space-between;
+    }
+    #intro .elemContenedor{
+        margin-right: 0.5%;
+        margin-left: 0.5%;
+        text-align: justify;
+    }
+    .contenedorConGrafico .grafico{
+        padding: 0.5%;
+        background-color: rgba(211, 211, 211, 0.692);
+        border-width: 2px;
+        border-color: black;
+        border-radius: 10px;
     }
 </style>
