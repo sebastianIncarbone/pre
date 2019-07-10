@@ -98,17 +98,18 @@
 
     Buenas chic@s de persistencia! 
 
-    De parte de Two&HalfWoman queriamos invitarlos a presenciar la precentacion que haremos este viernes
+    De parte de Two(Three)&HalfGirl queriamos invitarlos a la presentación que haremos este viernes
     a las 20:30Hrs. 
     Para hacer una pequeña intro, vamos a dar respuestas a preguntas como:
     
-    - Que es machine learning?
-    - Que diferencias hay con deep learning?
-    - Que toca en todo esto la inteligencia artificial?
-    - Como se puede aplicar? 
+    - ¿Que es machine learning?
+    - ¿Que diferencias hay con deep learning?
+    - ¿Que toca en todo esto la inteligencia artificial?
+    - ¿Cómo se relaciona con las bases de datos?
+    - ¿Como se puede aplicar? 
     - frameworks
-    - y mas...
+    - y más...
 
-    Para la presentacion hicimos una pagina web la que vas a poder acceder a todos los contenidos teoricos, incluso a una demo sencilla usando tensor flow.
+    Para la presentación hicimos una pagina web en la cual vas a poder acceder a todos los contenidos teóricos, incluso a una demo sencilla utilizando tensor flow.
 
-    Los esperamos a todos, saludos!
+    ¡Los esperamos a todos, saludos!
