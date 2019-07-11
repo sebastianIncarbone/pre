@@ -10,7 +10,7 @@
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
                 <a href="https://www.google.com" target="_blank">
-                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt">G</i>
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
                 </a>
             </div>
         </div>
@@ -35,19 +35,19 @@
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
                 <a href="https://github.com/R4nKF1v3" target="_blank">
-                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt">Github</i>
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
                 </a>
             </div>
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
-                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope">Nahuel</i>
+                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
             <div class="icon">
                 <a href="https://www.linkedin.com/in/nahuel-moscatelli" target="_blank">                
-                    <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin">Linkedin</i>
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>

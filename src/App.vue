@@ -33,7 +33,12 @@ export default {
 
 
 <style>
-
+/*
+ *
+ *  font-family: 'Roboto', sans-serif;
+ *  font-family: 'Oswald', sans-serif;
+ *
+ */
   #bg{
     position: absolute;
     top:0px;
@@ -71,4 +76,11 @@ export default {
     top:100vh;
   }
 
+  h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h4,h5,p,a{
+    font-family: 'Oswald', sans-serif;
+  }
 </style>

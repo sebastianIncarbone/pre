@@ -218,7 +218,7 @@ export default {
   .bienvenida .tituloDeBienvenida h2{
       color: white;
       text-align: left;
-      font-size: 2rem;
+      font-size: 2.2rem;
   }
 
   .bienvenida .parrafoDeBienvenida p{
