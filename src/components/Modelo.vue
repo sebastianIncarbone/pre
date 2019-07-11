@@ -26,7 +26,7 @@
             <h2>Método de cuadrados ordinarios, ¿Qué es?</h2>
             <!-- - [Seba-Nahu] -> Metodo de cuadrados ordinarios -->
         </div>
-        <div class="card regrecionLineal" v-show="this.contador == 5">
+        <div class="card regresionLineal" v-show="this.contador == 5">
             <h2>¿Qué es la Regresión Lineal?</h2>
             <!-- - [Seba-Nahu] -> Que es regresion lineal? -->
         </div>
@@ -45,6 +45,11 @@
         <div class="card fuentes" v-show="this.contador >= 9">
             <h2>Fuentes</h2>
             <!-- - [Todos] -> Fuentes -->
+            <div class="fuentes-body">
+                <p>
+                    (<a href="https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd">2</a>). https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -93,5 +98,15 @@ export default {
         height: 80vh;
         width: 90vw;
         background: rgba(54, 53, 55, 0.5);
+    }
+    #model h2, #model h3{
+        margin-left: 1.5%;
+        background-color: rgba(0, 0, 0, 0.678);
+        color: bisque;
+        text-align: center;
+    }
+    #model .fuentes-body{
+        margin-left: 2%;
+        font-size: 16px;
     }
 </style>

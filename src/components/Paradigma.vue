@@ -29,6 +29,11 @@
         <div class="card fuentes" v-show="this.contador >= 5">
             <h2>Fuentes</h2>
             <!-- - [Todos] -> Fuentes -->
+            <div class="fuentes-body">
+                <p>
+                    (<a href=""></a>).
+                </p>
+            </div>
         </div>
     </div>    
 </template>
@@ -77,5 +82,15 @@ export default {
         height: 80vh;
         width: 90vw;
         background: rgba(54, 53, 55, 0.5);
+    }
+    #parad h2, #parad h3{
+        margin-left: 1.5%;
+        background-color: rgba(0, 0, 0, 0.678);
+        color: bisque;
+        text-align: center;
+    }
+    #parad .fuentes-body{
+        margin-left: 2%;
+        font-size: 16px;
     }
 </style>
