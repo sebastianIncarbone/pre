@@ -1,10 +1,10 @@
 <template>
     <div id="model">
         <div class="incrementar" >
-            <h1 v-text="'>'" @click="sumar()"></h1>
+            <h1 @click="sumar()"><i class="fas fa-chevron-right"></i></h1>
         </div>
         <div class="decrementar" >
-            <h1 v-text="'<'" @click="restar()"></h1>
+            <h1 @click="restar()"><i class="fas fa-chevron-left"></i></h1>
         </div>
         <div class="card queEs" v-show="this.contador <= 0">
             <h2>¿Qué es un modelo?</h2>
@@ -94,15 +94,13 @@ export default {
         cursor: pointer;
     }
     #model .card{
+        border-radius: 2rem;
         position: absolute;
         height: 80vh;
         width: 90vw;
         background: rgba(54, 53, 55, 0.5);
     }
     #model h2, #model h3{
-        margin-left: 1.5%;
-        background-color: rgba(0, 0, 0, 0.678);
-        color: bisque;
         text-align: center;
     }
     #model .fuentes-body{

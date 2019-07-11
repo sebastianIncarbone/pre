@@ -46,15 +46,20 @@ export default {
 </script>
 
 <style>
+
     .ejemplo .mnj1 .cls-1{fill:#ebebeb;}
 
     .ejemplo .mnj2 .cls-1{fill:#072940;}
     
     .ejemplo .mnj3 .cls-1{fill:#f23b3d;}
+    
+    @media (min-width: 901px) {
+        .ejemplo{
+            margin-top: 15%;
+        }
+    }
 
     .ejemplo{
-        position:relative;
-        top:-500px;
         padding:2.4em;
     }
 
