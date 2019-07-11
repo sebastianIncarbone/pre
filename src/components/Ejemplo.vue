@@ -7,11 +7,11 @@
             <h1 v-text="'<'" @click="restar()"></h1>
         </div>
         <div class="card queUsamos" v-show="this.contador <= 0">
-            <h2>Que frameworks hay?</h2>
+            <h2>¿Qué frameworks hay?</h2>
             <!-- - [Lau] -> tensor flow -->
         </div>
-        <div class="card demo" v-show="this.contador >= 1">
-            <h2>La demo</h2>
+        <div class="card demo" v-show="this.contador == 1">
+            <h2>La Demo</h2>
             <!-- - [Seba] -> muestra de la demo	 -->
             <p>
                 Aqui podremos aplicar y ver en practica lo que ya vimos
@@ -29,6 +29,15 @@
                 <button @click="addValue()"></button>
                 <input type="number" v-bind="iteracciones">
             </div> -->
+        </div>
+        <div class="card fuentes" v-show="this.contador >= 2">
+            <h2>Fuentes</h2>
+            <!-- - [Todos] -> Fuentes -->
+            <div class="fuentes-body">
+                <p>
+                    (<a href=""></a>).
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -56,7 +65,7 @@ export default {
             valoresY.push(valorY);
         },
         sumar(){
-            this.contador = this.contador >= 1? 1:this.contador + 1; 
+            this.contador = this.contador >= 2? 2:this.contador + 1; 
         },
         restar(){
             this.contador = this.contador < 0? 0:this.contador - 1;
@@ -103,5 +112,15 @@ export default {
         height: 80vh;
         width: 90vw;
         background: rgba(54, 53, 55, 0.5);
+    }
+    #demo h2{
+        margin-left: 1.5%;
+        background-color: rgba(0, 0, 0, 0.678);
+        color: bisque;
+        text-align: center;
+    }
+    #demo .fuentes-body{
+        margin-left: 2%;
+        font-size: 16px;
     }
 </style>

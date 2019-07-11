@@ -29,22 +29,26 @@
     <div class="circulo c2">
         <div class="img">
             <span class="base"></span>
-            <img src="../assets/logo.png" height="100px" width="100px"/>
+            <img src="../assets/nahu.png" height="100px" width="100px"/>
         </div>
 
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
-                <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
+                <a href="https://github.com/R4nKF1v3" target="_blank">
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt">Github</i>
+                </a>
             </div>
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
-                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
+                <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope">Nahuel</i>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
             <div class="icon">
-                <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/nahuel-moscatelli" target="_blank">                
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin">Linkedin</i>
+                </a>
             </div>
         </div>
     </div>
