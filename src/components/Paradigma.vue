@@ -35,6 +35,7 @@
         <div class="card supervisado" v-show="this.contador == 1">
             <h3>Supervisado</h3>
             <!-- - [Ama] -> Supervisado -->
+            <p>
             Estos métodos son los más sencillos de realizar. En ellos se parte de un conocimiento a priori.
             <br> El objetivo es, mediante unos datos de entrenamiento, deducir una función que haga lo mejor posible
             el mapeo entre unas entradas y una salida. 
@@ -42,6 +43,7 @@
              X las variables que predicen una determinada salida Y.
             <br>La variable a predecir Y puede ser una variable cuantitativa (como en el caso de problemas de regresión)
             o cualitativa (como en el caso de problemas de clasificación).
+            </p>
 
             <p style="margin-left:160px" >
                 <img src="../assets/aprendizajeSupervisado.png" height="230px" width="420px" /> 
