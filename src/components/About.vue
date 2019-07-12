@@ -109,15 +109,30 @@
 </script>
 
 <style>
-    .about{ 
-      display: grid;
-      grid-auto-rows: minmax(100px,25vh);
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 1em;
-      justify-items: center;
-      align-items: center;
+
+    @media only screen and (min-width: 900px) {
+        .about{ 
+            display: grid;
+            grid-auto-rows: minmax(100px,25vh);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 7rem;
+            justify-items: center;
+            align-items: center;
+        }        
+        
     }
 
+    @media only screen and (max-width: 900px) {
+        .about{ 
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            grid-template-columns: 1fr 1fr ;
+            grid-column-gap: 7rem;
+            grid-row-gap: 7rem;
+            justify-items: center;
+            align-items: center;
+        }
+    }
     .circulo{
         margin-top: 100px;
         display: flex;
