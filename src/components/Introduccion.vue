@@ -1,6 +1,6 @@
 <template>
     <div id="intro">
-        <div class="incrementar" >
+        <div class="incrementar">
             <h1 @click="sumar()"><i class="fas fa-chevron-right"></i></h1>
         </div>
         <div class="decrementar" >
@@ -9,24 +9,7 @@
         <div class="card historia" v-show="this.contador <= 0">
             <h2>Historia</h2>
             <!-- - [Lau] -> Historia breve -->
-            <div class="swiper-container" style="max-width:90%">
-                <p class="swiper-control">
-                <button type="button" class="btn btn-default btn-sm prev-slide">Prev</button>
-                <button type="button" class="btn btn-default btn-sm next-slide">Next</button>
-                </p>
-                <div class="swiper-wrapper timeline">
-                    <div class="swiper-slide" v-for="item in steps" v-bind:key="item">
-                        <div class="timestamp">
-                            <span class="date">{{item.dateLabel}}</span>
-                        </div>
-                        <div class="status">
-                            <span>{{item.title}}</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
+            <vue-horizontal-timeline v-bind:items="steps" style="max-height:0vh"/>
         </div>
         <div class="card redesNeuronales" v-show="this.contador == 1">
             <h2>Redes neuronales</h2>
@@ -37,10 +20,10 @@
                 funcionamiento del cerebro humano (Bryant y Frigaard, 2006).
             </p>
             <div class="contenedorConGrafico">
-                <div class="grafico elemContenedor">
-                    <img src="../assets/neuralnetworkmap.png" height="350px" width="300px"/>
+                <div class=" elemContenedor">
+                    <img src="../assets/neuralnetworkmap.png" width="200px" style="background:#FFF; border-radius:2rem;padding:4px;"/>
                 </div>
-                <div class="elemContenedor">
+                <div class="elemContenedor" style="margin-top:-15px; padding:10px;">
                     <p>
                         Son una red de nodos (neuronas) interconectados. Cada nodo es un punto de procesamiento de datos. Un nodo combina
                         el ingreso (<b>Input</b>) de los datos con un set de coeficientes, o pesos (<b>Weights</b>), que pueden amplificar
@@ -49,7 +32,7 @@
                         través de la red para afectar el resultado de la tarea. 
                         Si la señal pasa (<b>Output</b>), se considera que la neurona fue "Activada".
                     </p>
-                    <img src="../assets/nnnode.png" height="200px" width="400px"/>                    
+                    <img src="../assets/nnnode.png" width="370px" style="background:#FFF; border-radius:2rem;padding:4px;"/>                    
                 </div>
             </div>
             
@@ -67,7 +50,7 @@
                 capaces de aprender a llevar a cabo esas tareas.
             </p>
             <p class="elemContenedor">
-                <iframe width="440" height="220" src="https://www.youtube.com/embed/9QErWiClGjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="440" height="220" style="border-radius:2rem;" src="https://www.youtube.com/embed/9QErWiClGjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
             <p class="elemContenedor">
                 Esta influencia se ve atada desde los comienzos del Machine Learning y está engranada al concepto mismo del
@@ -85,13 +68,13 @@
             <!-- - [Todos] -> Fuentes -->
             <div class="fuentes-body">
                 <p>
-                    (<a href="https://en.wikipedia.org/wiki/Artificial_neural_network">2</a>). https://en.wikipedia.org/wiki/Artificial_neural_network
+                    <a href="https://en.wikipedia.org/wiki/Artificial_neural_network"><i class="fas fa-link"></i></a> https://en.wikipedia.org/wiki/Artificial_neural_network
                 </p>
                 <p>
-                    (<a href="https://skymind.ai/wiki/neural-network">3</a>). https://skymind.ai/wiki/neural-network
+                    <a href="https://skymind.ai/wiki/neural-network"><i class="fas fa-link"></i></a> https://skymind.ai/wiki/neural-network
                 </p>
                 <p>
-                    (<a href="https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning">4</a>). https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning
+                    <a href="https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning"><i class="fas fa-link"></i></a> https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning
                 </p>
             </div>
         </div>
@@ -101,19 +84,19 @@
 <script>
 
 const data = [
-  { dateLabel: '1950', title: 'Alan Turing crea el “Test de Turing”' },
-  { dateLabel: '1952', title: 'Arthur Samuel escribe el primer programa de ordenador capaz de aprender' },
-  { dateLabel: '1958', title: 'Frank Rosenblatt diseña el Perceptrón, la primera red neuronal artificial' },
-  { dateLabel: '1979', title: 'Estudiantes de la Universidad de Stanford inventan el “Stanford Cart”' },
-  { dateLabel: '1981', title: 'Gerald Dejong introduce el concepto “Explanation Based Learning” ' },
-  { dateLabel: '1985', title: 'Terry Sejnowski inventa NetTalk, que aprende a pronunciar palabras de la misma manera que lo haría un niño' },
-  { dateLabel: '1997', title: 'El ordenador Deep Blue, de IBM vence al campeón mundial de ajedrez Gary Kaspárov' },
-  { dateLabel: '2011', title: ' El ordenador Watson de IBM vence a sus competidores humanos en el concurso Jeopardy' },
-  { dateLabel: '2012', title: 'Google desarrolla una Red Neuronal Profunda para detectar patrones en vídeos e imágenes' },
-  { dateLabel: '2012', title: 'Nacimiento a la actual explosión de Machine Learning basado en RNPs (Redes Neuronales Profundas)' },
-  { dateLabel: '2014', title: ' Facebook desarrolla DeepFace, algoritmo basado en RNPs capaz de reconocer a personas con la misma precisión que un ser humano' },
-  { dateLabel: '2015', title: 'Amazon lanza su propia plataforma de Machine Learning' },
-  { dateLabel: '2015', title: 'Microsoft crea “Distributed Machine Learning Toolkit”, que permite la distribución eficiente de problemas de machine learning en múltiples computadores.' }
+  { title: '1950', content: 'Alan Turing crea el “Test de Turing”' },
+  { title: '1952', content: 'Arthur Samuel escribe el primer programa de ordenador capaz de aprender' },
+  { title: '1958', content: 'Frank Rosenblatt diseña el Perceptrón, la primera red neuronal artificial' },
+  { title: '1979', content: 'Estudiantes de la Universidad de Stanford inventan el “Stanford Cart”' },
+  { title: '1981', content: 'Gerald Dejong introduce el concepto “Explanation Based Learning” ' },
+  { title: '1985', content: 'Terry Sejnowski inventa NetTalk, que aprende a pronunciar palabras de la misma manera que lo haría un niño' },
+  { title: '1997', content: 'El ordenador Deep Blue, de IBM vence al campeón mundial de ajedrez Gary Kaspárov' },
+  { title: '2011', content: ' El ordenador Watson de IBM vence a sus competidores humanos en el concurso Jeopardy' },
+  { title: '2012', content: 'Google desarrolla una Red Neuronal Profunda para detectar patrones en vídeos e imágenes' },
+  { title: '2012', content: 'Nacimiento a la actual explosión de Machine Learning basado en RNPs (Redes Neuronales Profundas)' },
+  { title: '2014', content: ' Facebook desarrolla DeepFace, algoritmo basado en RNPs capaz de reconocer a personas con la misma precisión que un ser humano' },
+  { title: '2015', content: 'Amazon lanza su propia plataforma de Machine Learning' },
+  { title: '2015', content: 'Microsoft crea “Distributed Machine Learning Toolkit”, que permite la distribución eficiente de problemas de machine learning en múltiples computadores.' }
   ];
 
 
@@ -132,17 +115,6 @@ export default {
         restar(){
             this.contador = this.contador < 0? 0:this.contador - 1;
         }
-    },
-    mounted() {
-        var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
-        slidesPerView: 13,
-        paginationClickable: true,
-        grabCursor: true,
-        paginationClickable: true,
-        nextButton: '.next-slide',
-        prevButton: '.prev-slide',
-        });    
     }
 }
 </script>
@@ -157,24 +129,27 @@ export default {
     }
     
     #intro .decrementar{
-        position: absolute;
-        top:50vh;
-        left:20px;
         cursor: pointer;
+        position:absolute;
+        top: 82vh;
+        left: 10vw;
     }
 
     #intro .incrementar{
-        position: absolute;
-        top:50vh;
-        right:50px;
         cursor: pointer;
+        position:absolute;
+        top: 82vh;
+        right: 10vw;
     }
 
     #intro .card{
         border-radius: 2rem;
         position: absolute;
+        top:20px;
+        left:20px;
         height: 80vh;
         width: 90vw;
+        padding: 4px;
         background: rgba(54, 53, 55, 0.5);
     }
 
@@ -211,69 +186,13 @@ export default {
     }
 
     .timeline {
-        margin: 50px 0;
-        list-style-type: none;
-        display: flex;
-        padding: 0;
-        text-align: center;
-        }
-        .timeline li {
-        transition: all 200ms ease-in;
-        }
-        .timestamp {
-        width: 200px;
-        margin-bottom: 20px;
-        padding: 0px 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: 100; 
-        }
-        .status {
-        padding: 0px 0px;
-        display: flex;
-        justify-content: center;
-        border-top: 3px solid #3e70ff;
-        position: relative;
-        transition: all 200ms ease-in ;
-        }
-        
-        .status span {
-        font-weight: 600;
-        padding-top: 20px;
-        }
-        .status span:before {
-        content: '';
-        width: 25px;
-        height: 25px;
-        background-color: #e8eeff;
-        border-radius: 25px;
-        border: 4px solid #3e70ff;
-        position: absolute;
-        top: -15px;
-        left: 42%;
-        transition: all 200ms ease-in;
-        }
-        .swiper-control {
-        text-align: right;
-        }
+        margin-top: -66px;
+        max-width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        .swiper-container {
-        width: 100%;
-        height: 250px;
-        margin: 50px 0;
-        overflow: hidden;
-        padding: 0 20px 30px 20px;
-        }
-        .swiper-slide {
-        width: 200px;
-        text-align: center;
-        font-size: 18px;
-        }
-        .swiper-slide:nth-child(2n) {
-        width: 40%;
-        }
-        .swiper-slide:nth-child(3n) {
-        width: 20%;
-        }
+    .fuentes-body a{
+        text-decoration: none;
+    }
 </style>

@@ -96,6 +96,6 @@ export default {
   }
 
   h4,h5,p,a{
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
   }
 </style>

@@ -3,8 +3,7 @@
 
     <div class="circulo">
         <div class="img">
-            <span class="base"></span>
-            <img src="../assets/logo.png" height="100px" width="100px"/>
+            <img src="../assets/seba_Ink.jpg" style="border-radius:50%" height="120px" width="120px"/>
         </div>
 
         <div id="circulo-b1" class="circulo-back">
@@ -154,12 +153,12 @@
         border-radius: 50%;
         opacity: 1;
         z-index: 3;
+        display:flex;
+        align-items: center
     }
 
     .circulo .img img{
-        position: relative;
-        top:33px;
-        left: 25px;
+        margin:auto;        
     }
 
     .circulo-back{
