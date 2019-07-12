@@ -79,22 +79,28 @@
     <div class="circulo">
         <div class="img">
             <span class="base"></span>
-            <img src="../assets/logo.png" height="100px" width="100px"/>
+            <img src="../assets/lauta.png" height="83px" width="105px"/>
         </div>
 
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
+                <a href="https://github.com/lautarolaghezza" target="_blank">
                 <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
+                 </a>
             </div>
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
+                 <a href="mailto:lautariver35@gmail.com" target="_blank">
                 <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
+                 </a>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
             <div class="icon">
+                 <a href="https://ar.linkedin.com/in/lautaro-laghezza-14539715a" target="_blank">
                 <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </div>
