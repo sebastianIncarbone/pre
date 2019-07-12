@@ -37,12 +37,14 @@
             <!-- - [Ama] -> Supervisado -->
             <p>
             Estos métodos son los más sencillos de realizar. En ellos se parte de un conocimiento a priori.
-            <br> El objetivo es, mediante unos datos de entrenamiento, deducir una función que haga lo mejor posible
+            <br> El objetivo es, mediante unos datos de entrenamiento (se necesita intervención humana), deducir una función que haga lo mejor posible
             el mapeo entre unas entradas y una salida. 
             <br> Los datos de entrenamiento constan de tuplas (X,Y), siendo
              X las variables que predicen una determinada salida Y.
-            <br>La variable a predecir Y puede ser una variable cuantitativa (como en el caso de problemas de regresión)
+            <br>La variable a predecir Y puede ser una variable cuantitativa (como en el caso de problemas de regresión (predicen un valor numérico))
             o cualitativa (como en el caso de problemas de clasificación).
+            Aplicación: - Detección de fraudebanario.
+            <br> - Previsión de deterioro en la maquinaria de una compañía.
             </p>
 
             <p style="margin-left:160px" >
