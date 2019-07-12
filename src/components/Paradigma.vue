@@ -67,7 +67,13 @@
             <!-- - [Todos] -> Fuentes -->
             <div class="fuentes-body">
                 <p>
-                    (<a href=""></a>).
+                    (<a href="https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado">2</a>). https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado
+                </p>
+                <p>
+                    (<a href="https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/">3</a>). https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/
+                </p>
+                <p>
+                    (<a href="https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo">4</a>). https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo
                 </p>
             </div>
         </div>
