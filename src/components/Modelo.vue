@@ -9,18 +9,67 @@
         <div class="card queEs" v-show="this.contador <= 0">
             <h2>¿Qué es un modelo?</h2>
             <!-- - [Seba-Lau] -> Que es un modelo? -->
+         <p>   Tras entrenar al sistema (es decir, tras detectar los patrones en los datos), se crea un modelo que servirá para hacer las predicciones. Podemos asimilar un modelo a un filtro en el que entran datos nuevos y cuya salida es la clasificación de ese dato según los patrones que se han detectado en el entrenamiento. Por ejemplo, si se entrena un modelo con datos históricos de clientes para detectar el riesgo de baja de una tarjeta de crédito, el modelo clasificará a los nuevos clientes en función de su comportamiento para predecir el riesgo de baja.</p>
+
+<div style="margin-left:200px;">
+ <img src="../assets/modelo.png" heigth="200px" width="250px"> 
+</div>
+
+<p>
+Un modelo busca el equilibrio entre aproximarse en representar correctamente la realidad
+    y ser simple para poder utilizarlo. Imaginemos a un ave, Pepita... podemos aproximarnos en un
+    primer modelo, a que un ave puede volar. pero.. ¿Qué pasa? es un poco básico por que no todas las 
+    aves puedenn volar. Por lo tanto actualizamos el modelo y decimos que si un ave es adulta y esta 
+    herida no puede volar. Pero de repente nos vamos un poco mas al sur... y que aparece un pinguino 
+    que es ave... si! pero carece de la posibilidad alguna de despegarse del suelo 
+    Entonces ajustamos nuevamente nuestro modelo a las variaciones de la realidad que estamos modelando 
+    pero al final acabaremso teniendo un modelo muy complejo con todas las ecepciones  de porque un ave
+    vuela o no. Una alternativa a esto es hacer uso de la probabilidad, para decir 
+    matematicamente que la mayoria de aves pueden volar.
+</p>
         </div>
         <div class="card datos" v-show="this.contador == 1">
             <h2>¿Qué datos los integran?</h2>
             <!-- - [Seba-Lau] -> Que datos ingresan en un modelo? -->
+            <p>Es la materia prima del sistema de predicción. Es el histórico de datos que se usa para entrenar al sistema que detecta los patrones. El conjunto de datos se compone de instancias, y las instancias de factores, características o propiedades.
+No es raro ver cómo se usan indiferentemente los conceptos minería de datos y machine learning. Son conceptos primos hermanos. Desde nuestro punto de vista, la principal diferencia radica en el objetivo que tiene cada una de las disciplinas. Mientras que la minería de datos descubre patrones anteriormente desconocidos, el machine learning se usa para reproducir patrones conocidos y hacer predicciones basadas en los patrones.
+En pocas palabras se podría decir que la minería de datos tiene una función exploratoria mientras que el machine learning se focaliza la predicción.</p>
+
+
+<div  style="margin-left:200px;">
+ <img src="../assets/datos.jpg"> 
+</div>
+
         </div>
         <div class="card parametros" v-show="this.contador == 2">
             <h2>Los parámetros de un modelo</h2>
             <!-- - [Seba-Lau] -> Los parametros del modelo -->
+                <p>Son los datos que podemos modificar, estos valores son los parametros del modelo y son los unicos que nos 
+    aportan la flexibilidad para poder ajustarnos a los datos. </p>
+
+    
+<div style="margin-left:100px;">
+ <img src="../assets/parametros.png" heigth="500px" width="550px"> 
+</div>
         </div>
+
+    
         <div class="card error" v-show="this.contador == 3">
             <h2>El error, ¿Es importante?</h2>
             <!-- - [Seba-Lau] -> El error -->
+                <p>Es necesario siempre definir una funcion de error que permita definir como el modelo se ajusta o no a los datos.
+    Normalmente cuando se usa algoritmos de aprendijase supervisado esta funcion se computa a partir de los datos de 
+    salida suministrados.
+    En caso de un algoritmo de aprendisaje no supervisado, otras medidas se computan a base de los datos de entrada.
+    Esta señal de error es muy importante por que es a partir de la cual se ajustara el modelo. En un proceso que es
+    denominado obtimizacion normalmente conocida como <strong>Entrenamiento</strong>.</p>
+
+
+<div style="margin-left:150px;">
+ <img src="../assets/error.png" heigth="350px" width="370px"> 
+</div>
+
+
         </div>
         <div class="card regresionLineal" v-show="this.contador == 4">
             <h2>¿Qué es la Regresión Lineal?</h2>
@@ -30,7 +79,7 @@
             </p>
             <div class="contenedorConGrafico">
                 <div class="elemContenedor">
-                    <img src="../assets/linearregresiongraph.png" height="300px" width="500px"/> 
+                    <img src="../assets/linearregresiongraph.png" height="250px" width="350px"/> 
                 </div>
                 <div class="elemContenedor">
                     <p>
@@ -98,18 +147,50 @@
         <div class="card comparativaConTensorFlow" v-show="this.contador == 8">
             <h2>¿Cómo se aplica en TensorFlow?</h2>
             <!-- - [Lau] -> Comparar con tensor flow -->
+            <p>Modelo en TensorFlow: Los Estimators representan un modelo completo y ofrecen los mecanismos para entrenar los modelos,
+evaluar su error y generar predicciónes. Son la capa de más alto nivel.
+Te abstraen del entorno donde se ejecutarán ya sea local, un clúster distribuido con CPUs, GPUs o TPUs.</p>
+
+<p>
+Datos en TensorFlow: 
+Existen los datasets que son herramientas para construir y cargar un input de datos, manipularlo e introducirlo en tu modelo.</p>
+
+
+
+<p>
+Regresion lineal en TensorFlow:
+Supongamos que agarramos una funcion lineal y = mx +b , donde X e Y son dos “tensores”  y le seteamos algunos valores, por ejemplo :
+donde m = 1 y b = 1. <br>
+Entonces seteamos los datos para esta funcion: para X = 1 , Y =  2 ; para X = 2 , Y = 3; para x = 5 , Y = 6 como modelo de datos , luego hacemos entrenar al "robot" y, cuanto más lo entrene, más va a poder predecir futuros resultados, si le paso el valor de X = 7  me va a poder responder que el resultado, en cuanto más se entrene, nas cerca va a estar del 8.</p>
+
+<p>
+Regresion lineal multiple en Tensorflow:
+ 
+Relacionado al método de Machine Learning, se puede definir como la cantidad de datos de entrada comparables bajo una misma escala, relacionables y que influyen en la elaboración de la pendiente de Recursión Y = b + m1 X1 + m2 X2 + … + m(n) X(n)
+Por ejemplo, para utilizar este método, habria que representar las variables como tensores, pero éstos se pueden crearse con alguna "dimensión" y así determinar la dimensionalidad del sistema.
+</p>
+
+
         </div>
         <div class="card fuentes" v-show="this.contador >= 9">
             <h2>Fuentes</h2>
             <!-- - [Todos] -> Fuentes -->
             <div class="fuentes-body">
                 <p>
-                    (<a href="https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd">2</a>). https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd
+                    <a href="https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd"><i class="fas fa-link"></i></a>https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd
                 </p>
                 <p>
-                    (<a href="https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/">3</a>). https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/
+                    <a href="https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/"><i class="fas fa-link"></i></a> https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python
+                </p>
+                <p>
+                    <a href="https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/"><i class="fas fa-link"></i></a> https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python
+                </p>
+
+                <p>
+                    <a href="https://cleverdata.io/conceptos-basicos-machine-learning/"><i class="fas fa-link"></i></a>https://cleverdata.io/conceptos-basicos-machine-learning/
                     
                 </p>
+                
             </div>
         </div>
     </div>

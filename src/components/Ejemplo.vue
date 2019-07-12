@@ -8,7 +8,25 @@
         </div>
         <div class="card queUsamos" v-show="this.contador <= 0">
             <h2>¿Qué frameworks hay?</h2>
-            <!-- - [Lau] -> tensor flow -->
+            <!-- - [Lau] ->  -->
+<div>
+ <img src="../assets/logo_tensorFLOWWW.png" heigth="200px" width="250px"> <br>
+</div>
+<div>
+<img src="../assets/logo_spark.png" heigth="200px" width="250px"><br>
+</div><div>
+<img src="../assets/logo_caffe.png" heigth="200px" width="250px" style="background:#FFF"><br>
+</div>
+<div>
+    <img src="../assets/logo_torch.jpg" heigth="200px" width="250px" style="background:#FFF"><br>
+</div>
+<div>
+    <img src="../assets/logo_ski.png" heigth="200px" width="250px" style="background:#FFF"><br>
+</div>
+
+
+
+
         </div>
         <div class="card demo" v-show="this.contador == 1">
             <div class="chart">
@@ -234,5 +252,11 @@ export default {
     }
     #demo .demo{
         background: rgba(25, 35, 45, .9)
+
+    #demo .queUsamos{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1em;
+        
     }
 </style>
