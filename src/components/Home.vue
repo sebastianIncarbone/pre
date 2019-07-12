@@ -1,16 +1,18 @@
 <template>
   <div class="bienvenida">
-    <div class="tituloDeBienvenida">
-        <h2>
-          Machine learning
-        </h2>
-    </div>
-    <div class="parrafoDeBienvenida">
-        <p>
-            Aqui vamos a explicar un que significa, 
-            Que queremos decir cuando hablamos de machine learning.
-            Y adentrarnos en las cosas
-        </p>
+    <div>
+      <div class="tituloDeBienvenida">
+          <h2>
+            Machine learning
+          </h2>
+      </div>
+      <div class="parrafoDeBienvenida">
+          <p>
+              Aqui vamos a explicar un que significa, 
+              Que queremos decir cuando hablamos de machine learning.
+              Y adentrarnos en las cosas
+          </p>
+      </div>
     </div>
     <div id="cerebro">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 639.3 644.82">
@@ -211,14 +213,10 @@ export default {
     fill:#2e2c3b;
   }
 
-  .bienvenida .tituloDeBienvenida{
-      margin-left: 7vw;
-  }
-
   .bienvenida .tituloDeBienvenida h2{
       color: white;
       text-align: left;
-      font-size: 2rem;
+      font-size: 2.2rem;
   }
 
   .bienvenida .parrafoDeBienvenida p{
@@ -228,31 +226,44 @@ export default {
   }
 
   @media (max-width: 900px) {
-    
+    .bienvenida{
+      display: grid;
+      grid-auto-rows: minmax(100px,25vh);
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+    }
+
     .bienvenida .parrafoDeBienvenida{
-        margin-left: 7vw;
-        width: 40vw;
+        font-size: 1rem !important;  
+        width: 40vw;  
     }
 
     #cerebro{
-      position: absolute;
-      top: 30%;
-      right: 10%;
+      margin-top: 40%;
       width: 30vw;
     }
   }  
   
   @media (min-width: 901px) {
+    .bienvenida{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-auto-rows: minmax(100px,20vh);
+      grid-column-gap: 1em;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .bienvenida .tituloDeBienvenida{
+    }
     
     .bienvenida .parrafoDeBienvenida{
-        margin-left: 8vw;
         width: 45vw;
     }
 
     #cerebro{
-      position: absolute;
-      top: 25%;
-      right: 10%;
+      margin-top: 100%;
       width: 33vw;
     }
   }  

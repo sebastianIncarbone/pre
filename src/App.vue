@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="aplication">
 
     <background id="bg"/>
     <home id="bienvenida"/>
@@ -33,6 +33,36 @@ export default {
 
 
 <style>
+/*
+ *
+ *  font-family: 'Roboto', sans-serif;
+ *  font-family: 'Oswald', sans-serif;
+ *
+ */
+  @media (min-width: 901px) {
+    #aplication{ 
+      margin-top: 4em;
+      max-width: 98.7vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10vh;
+      grid-auto-rows: minmax(80vh,auto);
+      justify-items: center;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 900px) {
+    #aplication{ 
+      max-width: 98.7vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 10vh;
+      grid-auto-rows: minmax(50vh,auto);
+      justify-items: center;
+      align-items: center;
+    }
+  }
 
   #bg{
     position: absolute;
@@ -52,23 +82,31 @@ export default {
   }
 
   #bienvenida{
-    position:relative;
-    top:12vh;
+    /* position:relative;
+    top:12vh; */
   }
   
   #indice{
-    position:relative;
-    top:80vh;
+    /* position:relative;
+    top:80vh; */
   }
 
   #linksDeEjemplos{
-    position:relative;
-    top:-10vh;
+    /* position:relative;
+    top:-20vh; */
   }
 
   #about{
-    position:relative;
+    /* position:relative;
     top:100vh;
+    left: -35vw; */
   }
 
+  h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h4,h5,p,a{
+    font-family: 'Oswald', sans-serif;
+  }
 </style>

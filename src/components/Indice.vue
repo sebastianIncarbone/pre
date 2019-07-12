@@ -887,6 +887,7 @@
                     </g>
                 </svg>
         </div>
+        <div></div>
         <div id="contenedorDeLinks">
             <div class="introduccion" @click="introduccion()">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 849 200">
@@ -962,11 +963,13 @@
                     </g>
                 </svg>    
             </div>
-            <div class="ejemplo" @click="demo()">
+            <div class="modelo" @click="demo()">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 897 200">
-                     <linearGradient id="Nueva_muestra_de_degradado_4" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#ad1c5a"/><stop offset="0.36" stop-color="#c42351"/>
-                        <stop offset="0.72" stop-color="#d52849"/><stop offset="1" stop-color="#db2a47"/>
+                    <linearGradient id="Nueva_muestra_de_degradado_4" x1="702" y1="100" x2="882" y2="100" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#ad1c5a"/>
+                        <stop offset="0.36" stop-color="#c42351"/>
+                        <stop offset="0.72" stop-color="#d52849"/>
+                        <stop offset="1" stop-color="#db2a47"/>
                     </linearGradient>
                     <linearGradient id="Nueva_muestra_de_degradado_5" x1="14" y1="101" x2="194" y2="101" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#3EC408"/><stop offset="0.36" stop-color="#3EC408"/>
@@ -975,7 +978,7 @@
                     <g id="Layer_2" data-name="Layer 2">
                         <g id="Pastilla">
                             <g id="Layer_5" data-name="Layer 5">
-                                <rect class="cls-1" width="897" height="200" rx="100"/>
+                            <rect class="cls-1" width="897" height="200" rx="100"/>
                                 <text transform="translate(250 120)">
                                     <tspan v-bind:class="getClaseTexto(this.onOffEjemplo)">Demo</tspan>
                                 </text>
@@ -989,7 +992,7 @@
         </div>
         <div id="contendedorDelIndice" v-if="onOffGeneral">
             <div class="closeContenedor" v-if="onOffGeneral" @click="closeAll()">
-                <h1> X </h1>
+                <h1> <i class="fas fa-times-circle"></i> </h1>
             </div>
             <introduccion v-if="onOffPI"/>
             <modelo v-if="onOffPM"/>
@@ -1092,26 +1095,48 @@ export default {
  }
 }
 </script>
-
 <style>
 
     @media (max-width: 900px) {
-        
         #cerebro-colorido{
-        position:relative;
-        top: -40vh;
-        width:45vw;
+            position:absolute;
+            left: 3vw;
+            top: auto;
+            margin-top: -20px;
+            width:45vw;
+        }
+
+        #contenedorDeLinks{
+            z-index: 5;
+            height: 310px;
+            width:100%;
         }
     }  
     
     @media (min-width: 901px) {
-        
         #cerebro-colorido{
-        position:relative;
-        top: -10vh;
-        width:45vw;
+            position:absolute;
+            left: 3vw;
+            top: auto;
+            margin-top: -20px;
+            width:45vw;
+        }
+
+        #contenedorDeLinks{
+            z-index: 5;
+            height: 310px;
+            width:100%;
         }
     }  
+
+    /*****************************************************/
+
+    .indice{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: stretch;
+        align-items: stretch;
+    }
 
     /*****************************************************/
 
@@ -1119,9 +1144,6 @@ export default {
 
     #contenedorDeLinks .introduccion{
         cursor: pointer;  
-        position:relative;
-        top: -110vh;
-        left: 37vw;
         width: 40vw;
     }
     
@@ -1131,9 +1153,6 @@ export default {
 
     #contenedorDeLinks .modelo{
         cursor: pointer;  
-        position:relative;
-        top: -110vh;
-        left: 42vw;
         width: 40vw;
     }
     
@@ -1143,9 +1162,6 @@ export default {
     
     #contenedorDeLinks .paradigmas{
         cursor: pointer;  
-        position:relative;
-        top: -110vh;
-        left: 35vw;
         width: 40vw;
     }
     
@@ -1155,9 +1171,6 @@ export default {
 
     #contenedorDeLinks .ejemplo{
         cursor: pointer;  
-        position:relative;
-        top: -114.8vh;
-        left: 40vw;
         width: 40vw;
     }
 
@@ -1184,7 +1197,7 @@ export default {
     }
 
     .texto{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
         font-size:5rem;
         fill:#fff;
@@ -1192,7 +1205,7 @@ export default {
     }
 
     .textoOk{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: bold;
         font-size:5rem;
         fill:#81c418;;
@@ -1222,8 +1235,8 @@ export default {
     
     #contendedorDelIndice .closeContenedor{
         position: absolute;
-        top:20px;
-        right:50px; 
+        top:-5px;
+        right:25px; 
         font-family: 'Courier New', Courier, monospace;
         cursor: pointer;  
     }

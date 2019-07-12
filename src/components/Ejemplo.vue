@@ -1,10 +1,10 @@
 <template>
     <div id="demo">
         <div class="incrementar" >
-            <h1 v-text="'>'" @click="sumar()"></h1>
+            <h1 @click="sumar()"><i class="fas fa-chevron-right"></i></h1>
         </div>
         <div class="decrementar" >
-            <h1 v-text="'<'" @click="restar()"></h1>
+            <h1 @click="restar()"><i class="fas fa-chevron-left"></i></h1>
         </div>
         <div class="card queUsamos" v-show="this.contador <= 0">
             <h2>¿Qué frameworks hay?</h2>
@@ -108,15 +108,13 @@ export default {
         cursor: pointer;
     }
     #demo .card{
+        border-radius: 2rem;
         position: absolute;
         height: 80vh;
         width: 90vw;
         background: rgba(54, 53, 55, 0.5);
     }
     #demo h2{
-        margin-left: 1.5%;
-        background-color: rgba(0, 0, 0, 0.678);
-        color: bisque;
         text-align: center;
     }
     #demo .fuentes-body{
