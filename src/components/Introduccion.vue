@@ -76,6 +76,10 @@
                 <p>
                     <a href="https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning"><i class="fas fa-link"></i></a> https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning
                 </p>
+                <p>
+                    <a href="https://en.wikipedia.org/wiki/Timeline_of_machine_learning"><i class="fas fa-link"></i></a> https://en.wikipedia.org/wiki/Timeline_of_machine_learning
+                </p>             
+
             </div>
         </div>
     </div> 
