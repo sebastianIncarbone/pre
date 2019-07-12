@@ -18,17 +18,17 @@
                 <br>
                 Aprendizaje supervisado
                 <br>Aprendizaje no supervisado
-                <br>Aprendizaje semisupervisado
-                <br>Aprendizaje por refuerzo
-                <br>Transducción
-                <br>Aprendizaje multi-tarea
-                <br>Árboles de decisiones
-                <br>Reglas de asociación
-                <br>Algoritmos genéticos
+                <br> Aprendizaje por refuerzo
+                <br> Aprendizaje semisupervisado: Combinan los dos algoritmos anteriores para poder clasificar de manera adecuada. Se tiene en cuenta los datos marcados y los no marcados.
+                <br>Transducción: Similar al aprendizaje supervisado, pero no construye de forma explícita una función. 
+                <br>Aprendizaje multi-tarea: Usan conocimiento previamente aprendido 
+                <br>Árboles de decisiones: Se mapean observaciones sobre un objeto con conclusiones sobre el valor final de dicho objeto.
+                <br>Reglas de asociación: Procuran descubrir relaciones interesantes entre variables.
+                <br>Algoritmos genéticos: Procesos de búsqueda heurística que simulan la selección natural. Usan métodos tales como la mutación y el cruzamiento para generar nuevas clases que puedan ofrecer una buena solución a un problema dado.
                 <br>Redes neuronales artificiales
                <br> Máquinas de vectores de soporte (MVS)
                 <br>Algoritmos de agrupamiento
-                <br>Redes bayesianas
+        
             </p>
 
         </div>
@@ -97,19 +97,19 @@
             <!-- - [Todos] -> Fuentes -->
             <div class="fuentes-body">
                 <p>
-                    (<a href="https://www.raona.com/los-10-algoritmos-esenciales-machine-learning/">1</a>).https://www.raona.com/los-10-algoritmos-esenciales-machine-learning
+                    <a href="https://www.raona.com/los-10-algoritmos-esenciales-machine-learning/"><i class="fas fa-link"></i></a> https://www.raona.com/los-10-algoritmos-esenciales-machine-learning
                 </p>
                 <p>   
-                    (<a href="https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico#Modelos">2</a>). https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico#Modelos
+                    <a href="https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico#Modelos"><i class="fas fa-link"></i></a> https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico#Modelos
                  </p>
                 <p>                   
-                    (<a href="https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado">2</a>). https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado
+                    <a href="https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado"><i class="fas fa-link"></i></a> https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado
                 </p>
                 <p>
-                    (<a href="https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/">3</a>). https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/
+                    <a href="https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/"><i class="fas fa-link"></i></a> https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/
                 </p>
                 <p>
-                    (<a href="https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo">4</a>). https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo
+                    <a href="https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo"><i class="fas fa-link"></i></a> https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo
                 </p>
             </div>
         </div>

@@ -94,9 +94,6 @@
                 </br> El siguiente nivel podría combinar los óvalos y rectángulos, formando barbas, patas o colas rudimentarias.
                 </br> El proceso continúa hasta que se alcanza el nivel superior en la jerarquía, en el cual la red aprende a identificar gatos.
             </p>
-            <p class="deepLearning" >
-                <img src="../assets/gatitos.jpg" height="90px" width="180px"/> 
-            </p> 
         </div>
         <div class="card fuentes" v-show="this.contador > 4">
             <h2>Fuentes</h2>
