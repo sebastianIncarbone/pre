@@ -3,8 +3,7 @@
 
     <div class="circulo">
         <div class="img">
-            <span class="base"></span>
-            <img src="../assets/logo.png" height="100px" width="100px"/>
+            <img src="../assets/seba_Ink.jpg" style="border-radius:50%" height="120px" width="120px"/>
         </div>
 
         <div id="circulo-b1" class="circulo-back">
@@ -41,7 +40,9 @@
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
+                <a href="mailto:nahumoscatelli@gmail.com" target="_blank">
                 <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
@@ -85,22 +86,28 @@
     <div class="circulo">
         <div class="img">
             <span class="base"></span>
-            <img src="../assets/logo.png" height="100px" width="100px"/>
+            <img src="../assets/lauta.png" height="83px" width="105px"/>
         </div>
 
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
+                <a href="https://github.com/lautarolaghezza" target="_blank">
                 <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
+                 </a>
             </div>
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
+                 <a href="mailto:lautariver35@gmail.com" target="_blank">
                 <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
+                 </a>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
             <div class="icon">
+                 <a href="https://ar.linkedin.com/in/lautaro-laghezza-14539715a" target="_blank">
                 <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -115,15 +122,30 @@
 </script>
 
 <style>
-    .about{ 
-      display: grid;
-      grid-auto-rows: minmax(100px,25vh);
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 1em;
-      justify-items: center;
-      align-items: center;
+
+    @media only screen and (min-width: 900px) {
+        .about{ 
+            display: grid;
+            grid-auto-rows: minmax(100px,25vh);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 7rem;
+            justify-items: center;
+            align-items: center;
+        }        
+        
     }
 
+    @media only screen and (max-width: 900px) {
+        .about{ 
+            display: grid;
+            grid-auto-rows: minmax(100px,auto);
+            grid-template-columns: 1fr 1fr ;
+            grid-column-gap: 4rem;
+            grid-row-gap: 2rem;
+            justify-items: center;
+            align-items: flex-end;
+        }
+    }
     .circulo{
         margin-top: 100px;
         display: flex;
@@ -139,12 +161,12 @@
         border-radius: 50%;
         opacity: 1;
         z-index: 3;
+        display:flex;
+        align-items: center
     }
 
     .circulo .img img{
-        position: relative;
-        top:33px;
-        left: 25px;
+        margin:auto;        
     }
 
     .circulo-back{

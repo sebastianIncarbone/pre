@@ -1219,7 +1219,7 @@ export default {
         width:100vw;
         height:100vh;
         color: white;
-        z-index: 10;
+        z-index: 50;
     }
 
     #contendedorDelIndice::before{
