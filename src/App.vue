@@ -122,7 +122,7 @@ export default {
         height: 80vh;
         width: 90vw;
         padding: 4px;
-        background: rgba(54, 53, 55, 0.5);
+        background: rgba(54, 53, 55, 0.7);
     }
 
 </style>
