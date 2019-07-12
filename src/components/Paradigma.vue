@@ -7,18 +7,48 @@
             <h1 @click="restar()"><i class="fas fa-chevron-left"></i></h1>
         </div>
         <div class="card que" v-show="this.contador <= 0">
-            <h2>¿Que es un Paradigma?</h2>
+            <h2>¿Qué es un Paradigma?</h2>
             <!-- - [Ami] -> Que es un Paradigma? -->
+            <p class="paradigmas">
+                Son mecanismos que permiten que se pueda procesar toda aquella información nueva que
+                percibimos transformándola en conocimiento, también llamados mecanismos de aprendizaje.
+                <br> Según la problemática a la que se enfrentarán, el ambiente que les rodeará y qué factores 
+                influyen en la toma de decisiones, se podrán evaluar distintos algoritmos del aprendizaje automatizado
+                <br>
+                <br>
+                Aprendizaje supervisado
+                <br>Aprendizaje no supervisado
+                <br> Aprendizaje por refuerzo
+                <br> Aprendizaje semisupervisado: Combinan los dos algoritmos anteriores para poder clasificar de manera adecuada. Se tiene en cuenta los datos marcados y los no marcados.
+                <br>Transducción: Similar al aprendizaje supervisado, pero no construye de forma explícita una función. 
+                <br>Aprendizaje multi-tarea: Usan conocimiento previamente aprendido 
+                <br>Árboles de decisiones: Se mapean observaciones sobre un objeto con conclusiones sobre el valor final de dicho objeto.
+                <br>Reglas de asociación: Procuran descubrir relaciones interesantes entre variables.
+                <br>Algoritmos genéticos: Procesos de búsqueda heurística que simulan la selección natural. Usan métodos tales como la mutación y el cruzamiento para generar nuevas clases que puedan ofrecer una buena solución a un problema dado.
+                <br>Redes neuronales artificiales
+               <br> Máquinas de vectores de soporte (MVS)
+                <br>Algoritmos de agrupamiento
+        
+            </p>
+
         </div>
-        <div class="card CualesHay" v-show="this.contador == 1">
-            <h2>¿Cuáles hay dentro de ML?</h2>
-            <!-- - [Ami] -> Cuales hay en este campo de ML? -->
-        </div>
-        <div class="card supervisado" v-show="this.contador == 2">
+        <div class="card supervisado" v-show="this.contador == 1">
             <h3>Supervisado</h3>
-            <!-- - [Ami] -> Supervisado -->
+            <!-- - [Ama] -> Supervisado -->
+            Estos métodos son los más sencillos de realizar. En ellos se parte de un conocimiento a priori.
+            <br> El objetivo es, mediante unos datos de entrenamiento, deducir una función que haga lo mejor posible
+            el mapeo entre unas entradas y una salida. 
+            <br> Los datos de entrenamiento constan de tuplas (X,Y), siendo
+             X las variables que predicen una determinada salida Y.
+            <br>La variable a predecir Y puede ser una variable cuantitativa (como en el caso de problemas de regresión)
+            o cualitativa (como en el caso de problemas de clasificación).
+
+            <p style="margin-left:160px" >
+                <img src="../assets/aprendizajeSupervisado.png" height="230px" width="420px" /> 
+            </p>
+
         </div>
-        <div class="card noSupervisado" v-show="this.contador == 3">
+        <div class="card noSupervisado" v-show="this.contador == 2">
             <h3>No supervisado</h3>
             <!-- - [Nahu] -> No Supervisado -->
             <p>
@@ -46,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="card reforzado" v-show="this.contador == 4">
+        <div class="card reforzado" v-show="this.contador == 3">
             <h3>Reforzado</h3>
             <!-- - [Nahu] -> Reforzado -->
             <p>
@@ -62,18 +92,24 @@
                 <iframe width="440" height="220" src="https://www.youtube.com/embed/Pn_zGDJwkcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
         </div>
-        <div class="card fuentes" v-show="this.contador >= 5">
+        <div class="card fuentes" v-show="this.contador >= 4">
             <h2>Fuentes</h2>
             <!-- - [Todos] -> Fuentes -->
             <div class="fuentes-body">
                 <p>
-                    (<a href="https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado">2</a>). https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado
+                    <a href="https://www.raona.com/los-10-algoritmos-esenciales-machine-learning/"><i class="fas fa-link"></i></a> https://www.raona.com/los-10-algoritmos-esenciales-machine-learning
+                </p>
+                <p>   
+                    <a href="https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico#Modelos"><i class="fas fa-link"></i></a> https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico#Modelos
+                 </p>
+                <p>                   
+                    <a href="https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado"><i class="fas fa-link"></i></a> https://blog.bismart.com/es/diferencias-machine-learning-supervisado-no-supervisado
                 </p>
                 <p>
-                    (<a href="https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/">3</a>). https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/
+                    <a href="https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/"><i class="fas fa-link"></i></a> https://empresas.blogthinkbig.com/que-algoritmo-elegir-en-ml-aprendizaje/
                 </p>
                 <p>
-                    (<a href="https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo">4</a>). https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo
+                    <a href="https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo"><i class="fas fa-link"></i></a> https://www.xataka.com/inteligencia-artificial/conceptos-inteligencia-artificial-que-aprendizaje-refuerzo
                 </p>
             </div>
         </div>

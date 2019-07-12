@@ -57,22 +57,28 @@
     <div class="circulo">
         <div class="img">
             <span class="base"></span>
-            <img src="../assets/logo.png" height="100px" width="100px"/>
+            <img src="../assets/ama.png" height="100px" width="100px"/>
         </div>
 
         <div id="circulo-b1" class="circulo-back">
             <div class="icon">
-                <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
+                 <a href="https://github.com/amaliajaime" target="_blank">
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-github-alt"></i>
+                </a>
             </div>
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
+                <div class="icon">
                 <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
+            </div>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">
             <div class="icon">
-                <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/amalia-jaime-164653182/" target="_blank">                
+                    <i style="color:white;font-size: 1.5rem;" class="fab fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </div>
