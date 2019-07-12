@@ -98,4 +98,31 @@ export default {
   h4,h5,p,a{
     font-family: sans-serif;
   }
+  
+    
+    .decrementar{
+        cursor: pointer;
+        position:absolute;
+        top: 82vh;
+        left: 10vw;
+    }
+
+    .incrementar{
+        cursor: pointer;
+        position:absolute;
+        top: 82vh;
+        right: 10vw;
+    }
+
+    .card{
+        border-radius: 2rem;
+        position: absolute;
+        top:20px;
+        left:20px;
+        height: 80vh;
+        width: 90vw;
+        padding: 4px;
+        background: rgba(54, 53, 55, 0.5);
+    }
+
 </style>

@@ -142,25 +142,6 @@ export default {
         overflow: hidden;
         padding: 3em;
     }
-    #model .decrementar{
-        position: absolute;
-        top:50vh;
-        left:20px;
-        cursor: pointer;
-    }
-    #model .incrementar{
-        position: absolute;
-        top:50vh;
-        right:50px;
-        cursor: pointer;
-    }
-    #model .card{
-        border-radius: 2rem;
-        position: absolute;
-        height: 80vh;
-        width: 90vw;
-        background: rgba(54, 53, 55, 0.5);
-    }
     #model h2, #model h3{
         text-align: center;
     }
