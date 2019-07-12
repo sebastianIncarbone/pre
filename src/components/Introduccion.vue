@@ -44,12 +44,12 @@
                 Nació del reconocimiento de patrones y de la teoría que dice que las computadoras pueden aprender sin ser
                 programadas para realizar tareas específicas; investigadores interesados en la inteligencia artificial 
                 deseaban saber si las computadoras podían aprender de datos. 
-                 </br>El aspecto iterativo del machine learning es importante porque a medida que los modelos son expuestos a nuevos
+                 <br>El aspecto iterativo del machine learning es importante porque a medida que los modelos son expuestos a nuevos
                 datos, éstos pueden adaptarse de forma independiente. Aprenden de cálculos previos para producir decisiones y 
                 resultados confiables y repetibles.
-                 </br>En este contexto, “learning” (aprender), no se trata de memorizar y recolectar datos. Se trata de crear un modelo a 
+                 <br>En este contexto, “learning” (aprender), no se trata de memorizar y recolectar datos. Se trata de crear un modelo a 
                 partir de la información suministrada para poder generar conclusiones sobre ejemplares nunca antes vistos.
-                </br>El propósito del machine learning es que las personas y las máquinas trabajen de la mano, al éstas ser capaces de aprender 
+                <br>El propósito del machine learning es que las personas y las máquinas trabajen de la mano, al éstas ser capaces de aprender 
                 como un humano lo haría. Precisamente esto es lo que hacen los algoritmos, permiten que las máquinas ejecuten tareas, tanto
                 generales como específicas.
             </p>
@@ -78,8 +78,8 @@
             <p class="deepLearning">
                 El Deep Learning lleva a cabo el proceso de Machine Learning usando una red neuronal artificial que se compone
                 de un número de niveles jerárquicos. 
-                </br> En el nivel inicial de la jerarquía  la red aprende algo simple y luego envía esta información al siguiente nivel. 
-                </br> El siguiente nivel toma esta información sencilla, la combina, compone una información algo un poco más compleja, 
+                <br> En el nivel inicial de la jerarquía  la red aprende algo simple y luego envía esta información al siguiente nivel. 
+                <br> El siguiente nivel toma esta información sencilla, la combina, compone una información algo un poco más compleja, 
                 y se lo pasa al tercer nivel, y así sucesivamente.
             </p>
            
@@ -88,11 +88,11 @@
                 Si pensamos en un contexto de su uso podríamos imaginar un sistema que reconoce imágenes de gatos, el nivel inicial de una red 
                 de Deep Learning podría utilizar las diferencias entre las zonas claras y oscuras de una imagen para saber dónde están 
                 los bordes de la imagen. 
-                </br> El nivel inicial pasa esta información al segundo nivel, que combina los bordes construyendo formas simples, como una
+                <br> El nivel inicial pasa esta información al segundo nivel, que combina los bordes construyendo formas simples, como una
                 línea diagonal o un ángulo recto. 
-                </br> El tercer nivel combina las formas simples y obtiene objetos más complejos como óvalos o rectángulos.
-                </br> El siguiente nivel podría combinar los óvalos y rectángulos, formando barbas, patas o colas rudimentarias.
-                </br> El proceso continúa hasta que se alcanza el nivel superior en la jerarquía, en el cual la red aprende a identificar gatos.
+                <br> El tercer nivel combina las formas simples y obtiene objetos más complejos como óvalos o rectángulos.
+                <br> El siguiente nivel podría combinar los óvalos y rectángulos, formando barbas, patas o colas rudimentarias.
+                <br> El proceso continúa hasta que se alcanza el nivel superior en la jerarquía, en el cual la red aprende a identificar gatos.
             </p>
         </div>
         <div class="card fuentes" v-show="this.contador > 4">
@@ -112,7 +112,7 @@
 
                     <a href="https://en.wikipedia.org/wiki/Timeline_of_machine_learning"><i class="fas fa-link"></i></a> https://en.wikipedia.org/wiki/Timeline_of_machine_learning
                 </p>             
-
+                <p>
                     <a href="https://www.grid.cl/blog/el-machine-learning-y-su-importancia-en-el-marketing-digital"><i class="fas fa-link"></i></a> https://www.grid.cl/blog/el-machine-learning-y-su-importancia-en-el-marketing-digital
                 </p>
                 <p> 
