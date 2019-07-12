@@ -58,11 +58,11 @@ En pocas palabras se podría decir que la minería de datos tiene una función e
             <h2>El error, ¿Es importante?</h2>
             <!-- - [Seba-Lau] -> El error -->
                 <p>Es necesario siempre definir una funcion de error que permita definir como el modelo se ajusta o no a los datos.
-    Normalmente cuando se usa algoritmos de aprendijase supervisado esta funcion se computa a partir de los datos de 
+    Normalmente cuando se usa algoritmos de aprendizaje supervisado esta función se computa a partir de los datos de 
     salida suministrados.
-    En caso de un algoritmo de aprendisaje no supervisado, otras medidas se computan a base de los datos de entrada.
+    En caso de un algoritmo de aprendizaje no supervisado, otras medidas se computan a base de los datos de entrada.
     Esta señal de error es muy importante por que es a partir de la cual se ajustara el modelo. En un proceso que es
-    denominado obtimizacion normalmente conocida como <strong>Entrenamiento</strong>.</p>
+    denominado optimización normalmente conocida como <strong>Entrenamiento</strong>.</p>
 
 
 <div style="margin-left:150px;">
