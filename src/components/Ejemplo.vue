@@ -252,7 +252,7 @@ export default {
     }
     #demo .demo{
         background: rgba(25, 35, 45, .9)
-
+    }
     #demo .queUsamos{
         display:grid;
         grid-template-columns: 1fr 1fr;
