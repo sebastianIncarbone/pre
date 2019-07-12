@@ -101,14 +101,21 @@
 <script>
 
 const data = [
-  { dateLabel: 'January 2017', title: 'Gathering Information' },
-  { dateLabel: 'February 2017', title: 'Planning' },
-  { dateLabel: 'March 2017', title: 'Design' },
-  { dateLabel: 'April 2017', title: 'Content Writing and Assembly' },
-  { dateLabel: 'May 2017', title: 'Coding' },
-  { dateLabel: 'June 2017', title: 'Testing, Review & Launch' },
-  { dateLabel: 'July 2017', title: 'Maintenance' }
-];
+  { dateLabel: '1950', title: 'Alan Turing crea el “Test de Turing”' },
+  { dateLabel: '1952', title: 'Arthur Samuel escribe el primer programa de ordenador capaz de aprender' },
+  { dateLabel: '1958', title: 'Frank Rosenblatt diseña el Perceptrón, la primera red neuronal artificial' },
+  { dateLabel: '1979', title: 'Estudiantes de la Universidad de Stanford inventan el “Stanford Cart”' },
+  { dateLabel: '1981', title: 'Gerald Dejong introduce el concepto “Explanation Based Learning” ' },
+  { dateLabel: '1985', title: 'Terry Sejnowski inventa NetTalk, que aprende a pronunciar palabras de la misma manera que lo haría un niño' },
+  { dateLabel: '1997', title: 'El ordenador Deep Blue, de IBM vence al campeón mundial de ajedrez Gary Kaspárov' },
+  { dateLabel: '2011', title: ' El ordenador Watson de IBM vence a sus competidores humanos en el concurso Jeopardy' },
+  { dateLabel: '2012', title: 'Google desarrolla una Red Neuronal Profunda para detectar patrones en vídeos e imágenes' },
+  { dateLabel: '2012', title: 'Nacimiento a la actual explosión de Machine Learning basado en RNPs (Redes Neuronales Profundas)' },
+  { dateLabel: '2014', title: ' Facebook desarrolla DeepFace, algoritmo basado en RNPs capaz de reconocer a personas con la misma precisión que un ser humano' },
+  { dateLabel: '2015', title: 'Amazon lanza su propia plataforma de Machine Learning' },
+  { dateLabel: '2015', title: 'Microsoft crea “Distributed Machine Learning Toolkit”, que permite la distribución eficiente de problemas de machine learning en múltiples computadores.' }
+  ];
+
 
 export default {
     name:'introduccion',
@@ -129,7 +136,7 @@ export default {
     mounted() {
         var swiper = new Swiper('.swiper-container', {
         //pagination: '.swiper-pagination',
-        slidesPerView: 4,
+        slidesPerView: 13,
         paginationClickable: true,
         grabCursor: true,
         paginationClickable: true,
@@ -223,10 +230,10 @@ export default {
         font-weight: 100; 
         }
         .status {
-        padding: 0px 40px;
+        padding: 0px 0px;
         display: flex;
         justify-content: center;
-        border-top: 4px solid #3e70ff;
+        border-top: 3px solid #3e70ff;
         position: relative;
         transition: all 200ms ease-in ;
         }
