@@ -32,7 +32,7 @@
                         través de la red para afectar el resultado de la tarea. 
                         Si la señal pasa (<b>Output</b>), se considera que la neurona fue "Activada".
                     </p>
-                    <img src="../assets/nnnode.png" width="370px" style="background:#FFF; border-radius:2rem;padding:4px;"/>                    
+                    <img src="../assets/nnnode.png" width="260px" style="background:#FFF; border-radius:2rem;padding:4px;"/>                    
                 </div>
             </div>
             
