@@ -8,9 +8,7 @@
       </div>
       <div class="parrafoDeBienvenida">
           <p>
-              Aqui vamos a explicar un que significa, 
-              Que queremos decir cuando hablamos de machine learning.
-              Y adentrarnos en las cosas
+              Qué es, cómo se compone y sus aplicaciones en el mundo.
           </p>
       </div>
     </div>
