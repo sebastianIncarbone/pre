@@ -79,7 +79,7 @@ En pocas palabras se podría decir que la minería de datos tiene una función e
             </p>
             <div class="contenedorConGrafico">
                 <div class="elemContenedor">
-                    <img src="../assets/linearregresiongraph.png" height="300px" width="500px"/> 
+                    <img src="../assets/linearregresiongraph.png" height="250px" width="350px"/> 
                 </div>
                 <div class="elemContenedor">
                     <p>
