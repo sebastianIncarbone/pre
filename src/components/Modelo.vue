@@ -104,11 +104,13 @@
             <!-- - [Todos] -> Fuentes -->
             <div class="fuentes-body">
                 <p>
-                    (<a href="https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd">2</a>). https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd
+                    <a href="https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd"><i class="fas fa-link"></i></a>https://medium.com/datos-y-ciencia/machine-learning-supervisado-fundamentos-de-la-regresi%C3%B3n-lineal-bbcb07fe7fd
                 </p>
                 <p>
-                    (<a href="https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/">3</a>). https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/
-                    
+                    <a href="https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/"><i class="fas fa-link"></i></a> https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python
+                </p>
+                <p>
+                    <a href="https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python/"><i class="fas fa-link"></i></a> https://www.aprendemachinelearning.com/regresion-lineal-en-espanol-con-python
                 </p>
             </div>
         </div>
