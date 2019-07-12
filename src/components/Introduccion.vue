@@ -109,11 +109,16 @@
                     <a href="https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning"><i class="fas fa-link"></i></a> https://www.forbes.com/sites/bernardmarr/2016/12/06/what-is-the-difference-between-artificial-intelligence-and-machine-learning
                 </p>
                 <p>
+
+                    <a href="https://en.wikipedia.org/wiki/Timeline_of_machine_learning"><i class="fas fa-link"></i></a> https://en.wikipedia.org/wiki/Timeline_of_machine_learning
+                </p>             
+
                     <a href="https://www.grid.cl/blog/el-machine-learning-y-su-importancia-en-el-marketing-digital"><i class="fas fa-link"></i></a> https://www.grid.cl/blog/el-machine-learning-y-su-importancia-en-el-marketing-digital
                 </p>
                 <p> 
                     <a href="https://www.indracompany.com/es/blogneo/deep-learning-sirve"><i class="fas fa-link"></i></a> https://www.indracompany.com/es/blogneo/deep-learning-sirve
                 </p>
+
 
             </div>
         </div>
