@@ -41,7 +41,9 @@
         </div>
         <div id="circulo-b2" class="circulo-back">
             <div class="icon">
+                <a href="mailto:nahumoscatelli@gmail.com" target="_blank">
                 <i style="color:white;transform:rotateZ(180deg);font-size: 1.5rem;" class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
         <div id="circulo-b3" class="circulo-back">

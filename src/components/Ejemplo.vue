@@ -27,7 +27,7 @@
                 <input type="number" v-bind="valorX">
                 <input type="number" v-bind="valorY">
                 <button @click="addValue()"></button>
-                <input type="number" v-bind="iteracciones">
+                <input type="number" v-bind="iteraciones">
             </div> -->
         </div>
         <div class="card fuentes" v-show="this.contador >= 2">
@@ -53,7 +53,7 @@ export default {
             valorY:0,
             valoresX:[],
             valoresY:[],
-            iteracciones:200,
+            iteraciones:200,
             valorDeEntrada:0,
             predicho:0,
             contador:0
@@ -79,7 +79,7 @@ export default {
             const xs = tf.tensor2d(valoresX, [valoresX.lenght, 1]);
             const ys = tf.tensor2d(valoresY, [valoresY.lenght, 1]);
 
-            await model.fit(xs, ys, {epochs:iteracciones});
+            await model.fit(xs, ys, {epochs:iteraciones});
 
             var predicho = model.predict(tf.tensor2d([valorDeEntrada],[1,1])).print();
         }
