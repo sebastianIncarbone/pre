@@ -167,12 +167,14 @@ export default {
         z-index: -1;
     }
 
-        #backgruond-burbujas{
-            max-height:1700px;
-            margin-left: -30.8vw;
-            width: 210vw;
-            z-index: 2;
-        }
+    #backgruond-burbujas{
+        max-height:1700px;
+        margin-left: -30.8vw;
+        width: 210vw;
+        z-index: 2;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, #19232d 50%, #19232d 100%);
+    }
+
 
     .animable{
         animation: animation 15s infinite;

@@ -133,10 +133,10 @@
             display: grid;
             grid-auto-rows: minmax(100px,auto);
             grid-template-columns: 1fr 1fr ;
-            grid-column-gap: 7rem;
-            grid-row-gap: 7rem;
+            grid-column-gap: 4rem;
+            grid-row-gap: 2rem;
             justify-items: center;
-            align-items: center;
+            align-items: flex-end;
         }
     }
     .circulo{

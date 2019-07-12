@@ -42,7 +42,7 @@ export default {
   @media only screen and (min-width: 900px) {
     #aplication{ 
       margin-top: 4em;
-      max-width: 98.7vw;
+      max-width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 10vh;
@@ -59,7 +59,7 @@ export default {
 
   @media only screen and (max-width: 900px) {
     #aplication{ 
-      max-width: 98.7vw;
+      max-width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 10vh;
@@ -69,7 +69,7 @@ export default {
     }
     
     #about{
-        margin-top: 0vh;
+        margin-top: 70vh;
     }
   }
 
