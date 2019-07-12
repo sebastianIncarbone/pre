@@ -187,7 +187,7 @@ Por ejemplo, para utilizar este método, habria que representar las variables co
                 </p>
 
                 <p>
-                    (<a href="https://cleverdata.io/conceptos-basicos-machine-learning/">4</a>). https://cleverdata.io/conceptos-basicos-machine-learning/
+                    <a href="https://cleverdata.io/conceptos-basicos-machine-learning/"><i class="fas fa-link"></i></a>https://cleverdata.io/conceptos-basicos-machine-learning/
                     
                 </p>
                 
