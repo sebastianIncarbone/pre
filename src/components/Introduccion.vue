@@ -128,31 +128,6 @@ export default {
         padding: 3em;
     }
     
-    #intro .decrementar{
-        cursor: pointer;
-        position:absolute;
-        top: 82vh;
-        left: 10vw;
-    }
-
-    #intro .incrementar{
-        cursor: pointer;
-        position:absolute;
-        top: 82vh;
-        right: 10vw;
-    }
-
-    #intro .card{
-        border-radius: 2rem;
-        position: absolute;
-        top:20px;
-        left:20px;
-        height: 80vh;
-        width: 90vw;
-        padding: 4px;
-        background: rgba(54, 53, 55, 0.5);
-    }
-
     #intro h2{
         text-align: center;
     }

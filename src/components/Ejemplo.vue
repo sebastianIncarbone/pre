@@ -17,18 +17,18 @@
                 Aqui podremos aplicar y ver en practica lo que ya vimos
             </p>
             <div class="chart">
-
+                <canvas id="chard"></canvas>
             </div>
-            <!-- <div class="valorPredicho">
-                <input type="number" v-bind="valorDeEntrada">
+            <div class="valorPredicho">
+                <input type="number" v-model="valorDeEntrada">
                 <h2 v-text="predicho"></h2>
             </div>            
             <div class="formulario">
-                <input type="number" v-bind="valorX">
-                <input type="number" v-bind="valorY">
+                <input type="number" v-model="valorX">
+                <input type="number" v-model="valorY">
                 <button @click="addValue()"></button>
-                <input type="number" v-bind="iteraciones">
-            </div> -->
+                <input type="number" v-model="iteraciones">
+            </div>
         </div>
         <div class="card fuentes" v-show="this.contador >= 2">
             <h2>Fuentes</h2>
@@ -94,25 +94,6 @@ export default {
         flex-wrap: wrap;
         overflow: hidden;
         padding: 3em;
-    }
-    #demo .decrementar{
-        position: absolute;
-        top:50vh;
-        left:20px;
-        cursor: pointer;
-    }
-    #demo .incrementar{
-        position: absolute;
-        top:50vh;
-        right:50px;
-        cursor: pointer;
-    }
-    #demo .card{
-        border-radius: 2rem;
-        position: absolute;
-        height: 80vh;
-        width: 90vw;
-        background: rgba(54, 53, 55, 0.5);
     }
     #demo h2{
         text-align: center;

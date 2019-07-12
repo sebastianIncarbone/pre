@@ -107,25 +107,6 @@ export default {
         overflow: hidden;
         padding: 3em;
     }
-    #parad .decrementar{
-        position: absolute;
-        top:50vh;
-        left:20px;
-        cursor: pointer;
-    }
-    #parad .incrementar{
-        position: absolute;
-        top:50vh;
-        right:50px;
-        cursor: pointer;
-    }
-    #parad .card{
-        border-radius: 2rem;
-        position: absolute;
-        height: 80vh;
-        width: 90vw;
-        background: rgba(54, 53, 55, 0.5);
-    }
     #parad h2, #parad h3{
         text-align: center;
     }
