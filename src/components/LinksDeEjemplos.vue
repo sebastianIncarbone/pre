@@ -53,7 +53,13 @@ export default {
     
     .ejemplo .mnj3 .cls-1{fill:#f23b3d;}
     
-    @media (min-width: 901px) {
+    @media only screen and (min-width: 900px) {
+        .ejemplo{
+            margin-top: 10%;
+        }
+    }
+    
+    @media only screen and (max-width: 900px) {
         .ejemplo{
             margin-top: 15%;
         }

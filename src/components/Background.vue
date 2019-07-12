@@ -38,9 +38,7 @@
         <div id="backgruond-burbujas">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3854.89 3185.39">
                 
-                <clipPath id="clip-path" transform="translate(0 -17.61)">
-                    <rect class="cls-1" x="0" width="2442.39" height="2441"/>
-                </clipPath>
+                
                 <linearGradient id="Nueva_muestra_de_degradado_4"  gradientTransform="translate(1473.39 483.47) rotate(-43.79)" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stop-color="#ad1c5a"/>
                 <stop offset="0.36" stop-color="#c42351"/>
@@ -115,8 +113,6 @@ export default {
     
     #backgruond-burbujas .cls-2{isolation:isolate;}
     
-    #backgruond-burbujas .cls-3{clip-path:url(#clip-path);}
-    
     #backgruond-burbujas .cls-4{fill:url(#Nueva_muestra_de_degradado_4);}
     
     #backgruond-burbujas .cls-5{opacity:0.9;fill:url(#Nueva_muestra_de_degradado_4-2);}
@@ -146,7 +142,7 @@ export default {
     #backgruond-burbujas .cls-15{fill:url(#Nueva_muestra_de_degradado_4-10);}
     
     #backgruond-burbujas .cls-16{fill:#19232d;}
-
+    
     #home{
         position: absolute;
         top:0px;
@@ -170,13 +166,15 @@ export default {
         width: 63%;
         z-index: -1;
     }
-    
+
     #backgruond-burbujas{
         max-height:1700px;
         margin-left: -30.8vw;
         width: 210vw;
         z-index: 2;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, #19232d 50%, #19232d 100%);
     }
+
 
     .animable{
         animation: animation 15s infinite;

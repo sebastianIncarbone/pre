@@ -39,28 +39,37 @@ export default {
  *  font-family: 'Oswald', sans-serif;
  *
  */
-  @media (min-width: 901px) {
+  @media only screen and (min-width: 900px) {
     #aplication{ 
       margin-top: 4em;
-      max-width: 98.7vw;
+      max-width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 10vh;
-      grid-auto-rows: minmax(80vh,auto);
+      grid-auto-rows: minmax(40vh,80vh);
       justify-items: center;
       align-items: flex-start;
     }
+    
+    #about{
+        margin-top: 140vh;
+    }
+    
   }
 
-  @media (max-width: 900px) {
+  @media only screen and (max-width: 900px) {
     #aplication{ 
-      max-width: 98.7vw;
+      max-width: 100vw;
       display: grid;
       grid-template-columns: 1fr;
       grid-row-gap: 10vh;
-      grid-auto-rows: minmax(50vh,auto);
+      grid-auto-rows: minmax(50vh,70vh);
       justify-items: center;
       align-items: center;
+    }
+    
+    #about{
+        margin-top: 70vh;
     }
   }
 
@@ -79,27 +88,7 @@ export default {
     right: 20px;
     width: 35px;
     height: 35px;
-  }
-
-  #bienvenida{
-    /* position:relative;
-    top:12vh; */
-  }
-  
-  #indice{
-    /* position:relative;
-    top:80vh; */
-  }
-
-  #linksDeEjemplos{
-    /* position:relative;
-    top:-20vh; */
-  }
-
-  #about{
-    /* position:relative;
-    top:100vh;
-    left: -35vw; */
+    z-index: 25;
   }
 
   h1,h2,h3{

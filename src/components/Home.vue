@@ -245,7 +245,7 @@ export default {
     }
   }  
   
-  @media (min-width: 901px) {
+  @media only screen and (min-width: 900px) {
     .bienvenida{
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -255,9 +255,6 @@ export default {
       align-items: center;
     }
 
-    .bienvenida .tituloDeBienvenida{
-    }
-    
     .bienvenida .parrafoDeBienvenida{
         width: 45vw;
     }
@@ -268,4 +265,29 @@ export default {
     }
   }  
 
+  
+  @media only screen and (max-width: 900px) {
+    .bienvenida{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-auto-rows: minmax(100px,20vh);
+      grid-column-gap: 1em;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .bienvenida .tituloDeBienvenida{
+      margin-top: -120px;
+    }
+    
+    .bienvenida .parrafoDeBienvenida{
+        margin-left:-5vw;
+        width: 40vw;
+    }
+
+    #cerebro{
+      margin-top: 100%;
+      width: 33vw;
+    }
+  }
 </style>
