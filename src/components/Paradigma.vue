@@ -67,7 +67,7 @@
             </div>
             <div class="contenedorConGrafico">
                 <div class="elemContenedor"> 
-                    <img src="../assets/spurious-correlations.png" height="300px" width="500px"/> 
+                    <img src="../assets/spurious-correlations.png" height="232px" width="400px"/> 
                 </div>
                 <div class="elemContenedor">
                     <p>
@@ -89,7 +89,7 @@
                 Un ejemplo claro y reciente de ésta metodología es AlphaGo Zero, sucesora del AlphaGo, que era una IA capaz de jugar al Go que fue capaz de vencer a un campeón humano tras analizar miles de partidas. A diferencia del AlphaGo, AlphaGo Zero logró los mismos resultados en solo 3 días de entrenamiento y ganó 100 veces seguidas a su predecesora, todo habiendo jugado únicamente contra si misma con variables de refuerzo millones de veces.
             </p>
             <p class="contenedorConGrafico">
-                <iframe width="440" height="220" src="https://www.youtube.com/embed/Pn_zGDJwkcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="440" height="175" src="https://www.youtube.com/embed/Pn_zGDJwkcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
         </div>
         <div class="card fuentes" v-show="this.contador >= 4">
