@@ -11,23 +11,21 @@
             <!-- - [Lau] -> tensor flow -->
         </div>
         <div class="card demo" v-show="this.contador == 1">
-            <h2>La Demo</h2>
-            <!-- - [Seba] -> muestra de la demo	 -->
-            <p>
-                Aqui podremos aplicar y ver en practica lo que ya vimos
-            </p>
             <div class="chart">
-                <canvas id="chard"></canvas>
+                <canvas id="chart"></canvas>
             </div>
             <div class="valorPredicho">
-                <input type="number" v-model="valorDeEntrada">
                 <h2 v-text="predicho"></h2>
             </div>            
             <div class="formulario">
-                <input type="number" v-model="valorX">
-                <input type="number" v-model="valorY">
-                <button @click="addValue()"></button>
+                <!-- <input type="number" v-model="valorX"> -->
+                <input type="number" v-model="valorDeEntrada">
                 <input type="number" v-model="iteraciones">
+                <button @click="entrenar()">Entrenar</button>
+                <input type="number" v-model="valorY">
+                <button @click="addValor(valorX,valorY)">+</button>
+                <button @click="clear()">Clear</button>
+                
             </div>
         </div>
         <div class="card fuentes" v-show="this.contador >= 2">
@@ -44,11 +42,55 @@
 
 <script>
 import * as tf from '@tensorflow/tfjs';
+import Chart from 'chart.js';
 
 export default {
     name:'demo',
     data(){
         return{
+            datosAGraficar: 
+                {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                        { // one line graph
+                            label: 'Regresion linear',
+                            data: [],
+                            backgroundColor: [
+                                'rgba(54,73,93,.6)'
+                            ],
+                            borderColor: [
+                                '#36495d',
+                            ],
+                            borderWidth: 3
+                        },
+                        { // another line graph
+                            label: 'Valores',
+                            data: [],
+                            backgroundColor: [
+                            'rgba(71, 183,132,.4)',
+                            ],
+                            borderColor: [
+                            '#47b784',
+                            ],
+                            borderWidth: 3
+                        }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        lineTension: 1,
+                        scales: {
+                        yAxes: [{
+                            ticks: {
+                            beginAtZero: true,
+                            padding: 25,
+                            }
+                        }]
+                        }
+                    }
+                },
             valorX:0,
             valorY:0,
             valoresX:[],
@@ -60,9 +102,25 @@ export default {
         }
     },
     methods:{
-        addValor(){
-            valoresX.push(valorX);
-            valoresY.push(valorY);
+        addValor(x,y){
+            this.valorX++;
+            const X = parseInt(x);
+            const Y = parseInt(y);
+            this.datosAGraficar.data.labels.push(X);
+
+            
+            this.datosAGraficar.data.datasets[1].data.push({x: X ,y: Y});
+            this.valoresX.push(X);
+            this.valoresY.push(Y);      
+            this.dibujar('chart', this.datosAGraficar);
+
+        },
+        addTensor(x, y){
+            
+            this.datosAGraficar.data.datasets[0].data.push({x: x ,y: parseFloat(y)});
+            
+            this.dibujar('chart', this.datosAGraficar);
+            
         },
         sumar(){
             this.contador = this.contador >= 2? 2:this.contador + 1; 
@@ -70,19 +128,91 @@ export default {
         restar(){
             this.contador = this.contador < 0? 0:this.contador - 1;
         },
+        dibujar(chartId, chartData){
+            const ctx = document.getElementById(chartId);
+            const myChart = new Chart(ctx, {
+                type: chartData.type,
+                data: chartData.data,
+                options: chartData.options,
+            });
+        },
+        clear(){
+            this.datosAGraficar = 
+                {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                        { // one line graph
+                            label: 'Regresion linear',
+                            data: [],
+                            backgroundColor: [
+                                'rgba(54,73,93,.6)'
+                            ],
+                            borderColor: [
+                                '#36495d',
+                            ],
+                            borderWidth: 3
+                        },
+                        { // another line graph
+                            label: 'Valores',
+                            data: [],
+                            backgroundColor: [
+                            'rgba(71, 183,132,.4)',
+                            ],
+                            borderColor: [
+                            '#47b784',
+                            ],
+                            borderWidth: 3
+                        }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        lineTension: 1,
+                        scales: {
+                        yAxes: [{
+                            ticks: {
+                            beginAtZero: true,
+                            padding: 25,
+                            }
+                        }]
+                        }
+                    }
+                };
+            this.valorX=0;
+            this.valorY=0;
+            this.valoresX=[];
+            this.valoresY=[];
+            this.iteraciones=200;
+            this.valorDeEntrada=0;
+            this.predicho=0;
+            this.dibujar('chart', this.datosAGraficar);
+        },
         async entrenar(){
             const model = tf.sequential();
 
             model.add(tf.layers.dense({units: 1, inputShape: [1]}));
             model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
 
-            const xs = tf.tensor2d(valoresX, [valoresX.lenght, 1]);
-            const ys = tf.tensor2d(valoresY, [valoresY.lenght, 1]);
+            const lenX = parseInt(this.valoresX.length);
+            const lenY = parseInt(this.valoresY.length);
 
-            await model.fit(xs, ys, {epochs:iteraciones});
+            const xs = tf.tensor2d(this.valoresX, [lenX, 1]);
+            const ys = tf.tensor2d(this.valoresY, [lenY, 1]);
 
-            var predicho = model.predict(tf.tensor2d([valorDeEntrada],[1,1])).print();
+            await model.fit(xs, ys, {epochs:this.iteraciones});
+
+            for (const key in this.valoresX) {
+                let predicho = model.predict(tf.tensor2d([parseInt(key)],[1,1])).dataSync()[0].toFixed(4);
+                this.addTensor(parseInt(key), predicho);
+            }
+            this.predicho = model.predict(tf.tensor2d([parseInt(this.valorDeEntrada)],[1,1])).dataSync()[0].toFixed(4);
+            this.addTensor(parseInt(this.valorDeEntrada), this.predicho);
         }
+    },
+    mounted() {
+        this.dibujar('chart', this.datosAGraficar);
     }
 }
 </script>
@@ -101,5 +231,8 @@ export default {
     #demo .fuentes-body{
         margin-left: 2%;
         font-size: 16px;
+    }
+    #demo .demo{
+        background: rgba(25, 35, 45, .9)
     }
 </style>
