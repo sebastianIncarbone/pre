@@ -13,7 +13,7 @@
     "@tensorflow/tfjs": "^1.2.2",
     "@vue/cli-service": "^3.9.2",
     "chart.js": "^2.8.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "serve-static": "^1.14.1",
     "vue": "^2.6.10",
     "vue-horizontal-timeline": "^0.5.0",
